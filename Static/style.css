@@ -6,23 +6,6 @@
     box-sizing: border-box;
 }
 
-
-
-.iconos{
-    width: 60px;
-    height: 60px;
-    
-}
-
-.navegacion button{
-    background: none;
-    border: none;
-    width: 60px;
-    height: 60px;
-    color: white;
-    font-family: 'Concert One', cursive;
-    font-size: 20px;
-}
 .navegacion{
     position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
 	left: 0; /* Establecemos la barra en la izquierda */
@@ -40,6 +23,15 @@
 }
 
 
+.navegacion button{
+    background: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+}
 
 .lblFotosOculta{
     position: fixed;
@@ -200,42 +192,44 @@
     background-color: #B886E8;
 }
 
-.img-chica {
-    position: absolute;
-    transition-duration: 1s, 1s, 1s, 1s;
-    width: 200px;
-    height: 200px;
-    left: 50%;
-    top: 50%;
-    margin-top: -100px;
-    margin-left: -100px;
-    border-radius: 200px;
+.galeria-imagenes {
+    height: calc( 300px + 3em);
+    width: 260px;
+    margin:1em auto;
+    border: none;
+    position: relative; 
 }
 
-.img-grande{
+.galeria-imagenes img {
     position: absolute;
-    transition-duration: 2s, 1s, 2s, 1s;
-    width: 300px;
-    height: 300px;
-    left: 50%;
-    top: 50%;
-    margin-top: -150px;
-    margin-left: -150px;
-    border-radius: 200px;
-} 
-
-.datos-personales{
-    position: absolute;
-    width: 371px;
-    left: 50%;
-    top: 100%;
-    margin-left: -185.5px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
 }
-.datos-academicos{
-    position: absolute;
-    width: 671px;
-    left: 50%;
-    top: 100%;
-    margin-top: 393px;
-    margin-left: -185.5px;
+
+.galeria-imagenes input[type=radio] {
+    position: relative;
+    bottom: calc(-400px - 0.1em);
+    left: 42%;
+  }
+
+.galeria-imagenes input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+}
+
+.galeria-imagenes input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+}
+
+.galeria-imagenes input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+}
+
+.galeria-imagenes input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+}
+
+.galeria-imagenes input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+    opacity: 1;
 }
