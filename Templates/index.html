@@ -17,9 +17,30 @@
                 linkInterno.on('click',function(e) {
                 e.preventDefault();
                 var href = $(this).attr('href');
-                $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
+                $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow', 'swing');
                 });
+            });  
+
+            $(function() {
+            
+                setInterval(changeImage, 2000);
+            
             });
+
+            (function(){
+                    var i = 1;
+                    var cambiar = setInterval( function(){
+                        $('.contenedor-imagenes').animate({
+                            opacity: 0.5
+                        }, '1000', function(){
+                            $(this).css({'background-image': 'url("/home/santiago/github/portfolio/Static/'+ i +'.jpg")'})
+                            .animate({opacity: 1});
+                            i++;
+                            if ( i == 7) { i = 1};
+                        });
+                    }, 3000);
+                
+            })();
         </script>
     </head>
     <body>
@@ -50,18 +71,7 @@
             </div>
         </div>
         <section class="contenedor-imagenes" id="seccion-imagenes">
-            <div class="galeria-imagenes">
-                <input type="radio" name="navegacion" id="_1" checked>
-                <input type="radio" name="navegacion" id="_2">
-                <input type="radio" name="navegacion" id="_3"> 
-                <input type="radio" name="navegacion" id="_4"> 
-                <input type="radio" name="navegacion" id="_5"> 
-                <img src="../Static/FOTO.jpg" width="300" height="400" alt="Galeria CSS 1" />
-                <img src="../Static/dj2.jpeg" width="300" height="400" alt="Galeria CSS 2"  />
-                <img src="../Static/dj4.jpeg" width="300" height="400" alt="Galeria CSS 4" />
-                <img src="../Static/dj5.jpeg" width="300" height="400" alt="Galeria CSS 5" />
-                <img src="../Static/dj6.jpg" width="300" height="400" alt="Galeria CSS 6" />
-            </div>
+            
         </section>  
         <section class="contenedor-yo" id="seccion-yo">
 
