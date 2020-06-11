@@ -72,7 +72,7 @@
 .lblFotos{
     animation-duration: 0.3s;
     animation-name: slidein;
-    background-color: #00A0B0;
+    background-color: none;
     position: fixed;
     text-align: center;
     color: white;
@@ -82,55 +82,55 @@
     animation-duration: 0.4s;
     animation-name: slidein;
     position: fixed;
-    background-color: #6A4A3C;
+    background-color: #073B40;
     text-align: center;
 }
 .lblPersonales{
     animation-duration: 0.4s;
     animation-name: slidein;
     position: fixed;
-    background-color: #CC333F;
+    background-color: #400A2A;
     text-align: center;
 }
 .lblAcademicos{
     animation-duration: 0.4s;
     animation-name: slidein;
     position: fixed;
-    background-color: #EB6841;
+    background-color: #044023;
     text-align: center;
 }
 .lblProyectos{
     animation-duration: 0.4s;
     animation-name: slidein;
     position: fixed;
-    background-color: #EDC951;
+    background-color: #40200A;
     text-align: center;
 }
 .lblRedes{
     animation-duration: 0.4s;
     animation-name: slidein;
     position: fixed;
-    background-color: #B886E8;
+    background-color: #044001;
     text-align: center;
 }
 
 .navegacion .Fotos{
-    background-color: #00A0B0;
+    background-color: non;
 }
 .navegacion .Yo{
-    background-color: #6A4A3C;
+    background-color: #073B40;
 }
 .navegacion .Personales{
-    background-color: #CC333F;
+    background-color: #400A2A;
 }
 .navegacion .Academicos{
-    background-color: #EB6841;
+    background-color: #044023;
 }
 .navegacion .Proyectos{
-    background-color: #EDC951;
+    background-color: #40200A;
 }
 .navegacion .Redes{
-    background-color: #B886E8;
+    background-color: #044001;
 }
 
 .contenedor-imagenes{
@@ -139,7 +139,9 @@
     padding: 0px;
     height: 100%;
     width: 100%;
-    background-color: #00A0B0;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
 }
 
 .contenedor-yo{
@@ -149,7 +151,7 @@
     top: 100%;
     height: 100%;
     width: 100%;
-    background-color: #6A4A3C;
+    background-color: #073B40;
 }
 
 .contenedor-datos-personales{
@@ -159,7 +161,7 @@
     top: 200%;
     height: 100%;
     width: 100%;
-    background-color: #CC333F;
+    background-color: #400A2A;
 }
 
 .contenedor-datos-academicos{
@@ -169,7 +171,7 @@
     top: 300%;
     height: 100%;
     width: 100%;
-    background-color: #EB6841;
+    background-color: #044023;
 }
 
 
@@ -180,7 +182,7 @@
     top: 400%;
     height: 100%;
     width: 100%;
-    background-color: #EDC951;
+    background-color: #40200A;
 }
 .contenedor-redes{
     position: absolute;
@@ -189,47 +191,7 @@
     top: 500%;
     height: 100%;
     width: 100%;
-    background-color: #B886E8;
+    background-color: #044001;
 }
 
-.galeria-imagenes {
-    height: calc( 300px + 3em);
-    width: 260px;
-    margin:1em auto;
-    border: none;
-    position: relative; 
-}
 
-.galeria-imagenes img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 3s;
-}
-
-.galeria-imagenes input[type=radio] {
-    position: relative;
-    bottom: calc(-400px - 0.1em);
-    left: 42%;
-  }
-
-.galeria-imagenes input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
-    opacity: 1;
-}
-
-.galeria-imagenes input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
-    opacity: 1;
-}
-
-.galeria-imagenes input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
-    opacity: 1;
-}
-
-.galeria-imagenes input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
-    opacity: 1;
-}
-
-.galeria-imagenes input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
-    opacity: 1;
-}
