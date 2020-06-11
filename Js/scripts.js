@@ -1,3 +1,5 @@
+
+//Efectos de la navegacion
 window.onscroll = function (){  
     // En la variable scroll se almacena la posición cada vez que se mueve el scroll
     var scroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -119,7 +121,7 @@ window.onscroll = function (){
     }
 }
 
-
+//Hover en la navegacion
 window.onload = function()
 {
     var fotos=document.getElementById("fotos");
@@ -200,4 +202,5 @@ window.onload = function()
         a.classList.add("lblRedesOculta");
     }
 }
+
 
