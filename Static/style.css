@@ -154,6 +154,23 @@
     background-color: #073B40;
 }
 
+.contenedor-yo .contenedor-parrafo{
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    height: 270px;
+    margin-left: -400px;
+    margin-top: -140px;
+}
+
+.contenedor-yo .contenedor-parrafo #parrafo-1{color: rgb(241, 241, 155);}
+.contenedor-yo .contenedor-parrafo #parrafo-2{color: yellowgreen;}
+.contenedor-yo .contenedor-parrafo #parrafo-3{color: rgb(110, 17, 17);}
+
+
 .contenedor-datos-personales{
     position: absolute;
     margin: 0px;
