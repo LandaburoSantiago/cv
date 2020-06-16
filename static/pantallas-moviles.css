@@ -13,7 +13,7 @@
     .navegacion{
         position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
         left: 50%; /* Establecemos la barra en la izquierda */
-        width: 200px;
+        width: 240px;
         margin-left: -120px;
         top: 0; /* Bajamos la barra 20% de arriba a abajo */
         z-index: 2000;
@@ -21,8 +21,8 @@
 
 
     .navegacion label{
-        height: 60px;
-        width: 160px;
+        height: 40px;
+        width: 120px;
         color: white;
         font-family: 'Economica', sans-serif;
         font-size: 20px;
@@ -42,42 +42,50 @@
     .lblFotosOculta{
         position: fixed;
         color: white;   
-        left: -180px;
+        left: 0;
+        top: -50px;
     }
 
     .lblYoOculta{
         position: fixed;
-        left: -180px;
+        left: 0;
+        top: -50px;
     }
     .lblPersonalesOculta{
         position: fixed;
-        left: -180px;
+        left: 0;
+        top: -50px;
     }
     .lblAcademicosOculta{
         position: fixed;
-        left: -180px;
+        left: 0;
+        top: -50px;
     }
     .lblProyectosOculta{
         position: fixed;
-        left: -180px;
+        left: 0;
+        top: -50px;
     }
     .lblRedesOculta{
         position: fixed;
-        left: -180px;
+        left: 0;
+        top: -100px;
     }
 
     @keyframes slidein{
         from {
-            left:-140px;
+            top:-50px;
         }
         to {
-            left: 60px;
+            top: 40px;
         }
     }
 
     .lblFotos{
         animation-duration: 0.3s;
         animation-name: slidein;
+        top: 40px;
+        margin-left: -40px;
         background-color: none;
         position: fixed;
         text-align: center;
@@ -87,6 +95,8 @@
     .lblYo{
         animation-duration: 0.4s;
         animation-name: slidein;
+        top: 40px;
+        left: 172px;
         position: fixed;
         background-color: #073B40;
         text-align: center;
@@ -94,6 +104,8 @@
     .lblPersonales{
         animation-duration: 0.4s;
         animation-name: slidein;
+        top: 40px;
+        margin-left: -40px;
         position: fixed;
         background-color: #400A2A;
         text-align: center;
@@ -101,6 +113,8 @@
     .lblAcademicos{
         animation-duration: 0.4s;
         animation-name: slidein;
+        top: 40px;
+        margin-left: -40px;
         position: fixed;
         background-color: #044023;
         text-align: center;
@@ -108,6 +122,8 @@
     .lblProyectos{
         animation-duration: 0.4s;
         animation-name: slidein;
+        top: 40px;
+        margin-left: -40px;
         position: fixed;
         background-color: #40200A;
         text-align: center;
@@ -115,6 +131,8 @@
     .lblRedes{
         animation-duration: 0.4s;
         animation-name: slidein;
+        top: 40px;
+        margin-left: -40px;
         position: fixed;
         background-color: #044001;
         text-align: center;

@@ -8,7 +8,7 @@
 
 /* Estilos pantallas medianas (notebooks, escritorio) */
 
-@media (max-width: 1023px) and (min-width: 800px){
+@media (max-width: 1023px) and (min-width: 919px){
 
     .navegacion{
         position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/

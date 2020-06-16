@@ -2,6 +2,12 @@
 //Efectos de la navegacion
 window.onscroll = function (){  
     // En la variable scroll se almacena la posición cada vez que se mueve el scroll
+    var contenedorFotos = document.getElementById('seccion-imagenes');
+    
+    var posicion = contenedorFotos.getBoundingClientRect();
+    console.log(posicion.top);
+
+
     var scroll = document.documentElement.scrollTop || document.body.scrollTop;
     const idFotos = document.getElementById("idFotos");
     const idYo = document.getElementById("idYo");

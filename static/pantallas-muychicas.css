@@ -1,27 +1,18 @@
-*{
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
-/* Estilos pantallas medianas (tablets, netbooks) */
-
-@media (max-width: 919px) and (min-width: 600px){
+@media (max-width: 319px) and (min-width: 0px){
 
     .navegacion{
         position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
         left: 50%; /* Establecemos la barra en la izquierda */
-        width: 300px;
-        margin-left: -150px;
+        width: 140px;
+        margin-left: -105px;
         top: 0; /* Bajamos la barra 20% de arriba a abajo */
         z-index: 2000;
     }
 
 
     .navegacion label{
-        height: 50px;
+        height: 35px;
         width: 120px;
         color: white;
         font-family: 'Economica', sans-serif;
@@ -32,8 +23,8 @@
     .navegacion button{
         background: none;
         border: none;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 45px;
         color: white;
         font-family: 'Concert One', cursive;
         font-size: 20px;
@@ -77,15 +68,15 @@
             top:-50px;
         }
         to {
-            top: 50px;
+            top: 35px;
         }
     }
 
     .lblFotos{
         animation-duration: 0.3s;
         animation-name: slidein;
-        top: 50px;
-        margin-left: -50px;
+        top: 40px;
+        margin-left: -35px;
         background-color: none;
         position: fixed;
         text-align: center;
@@ -95,8 +86,8 @@
     .lblYo{
         animation-duration: 0.4s;
         animation-name: slidein;
-        top: 50px;
-        margin-left: -50px;
+        top: 40px;
+        margin-left: -35px;
         position: fixed;
         background-color: #073B40;
         text-align: center;
@@ -104,8 +95,8 @@
     .lblPersonales{
         animation-duration: 0.4s;
         animation-name: slidein;
-        top: 50px;
-        margin-left: -50px;
+        top: 40px;
+        margin-left: -35px;
         position: fixed;
         background-color: #400A2A;
         text-align: center;
@@ -113,8 +104,8 @@
     .lblAcademicos{
         animation-duration: 0.4s;
         animation-name: slidein;
-        top: 50px;
-        margin-left: -50px;
+        top: 40px;
+        margin-left: -35px;
         position: fixed;
         background-color: #044023;
         text-align: center;
@@ -122,8 +113,8 @@
     .lblProyectos{
         animation-duration: 0.4s;
         animation-name: slidein;
-        top: 50px;
-        margin-left: -50px;
+        top: 40px;
+        margin-left: -35px;
         position: fixed;
         background-color: #40200A;
         text-align: center;
@@ -131,8 +122,8 @@
     .lblRedes{
         animation-duration: 0.4s;
         animation-name: slidein;
-        top: 50px;
-        margin-left: -50px;
+        top: 40px;
+        margin-left: -35px;
         position: fixed;
         background-color: #044001;
         text-align: center;
@@ -145,27 +136,27 @@
     }
     .navegacion .Yo{
         position: absolute;
-        margin-left: 50px;
+        margin-left: 35px;
         background-color: #073B40;
     }
     .navegacion .Personales{
         position: absolute;
-        margin-left: 100px;
+        margin-left: 70px;
         background-color: #400A2A;
     }
     .navegacion .Academicos{
         position: absolute;
-        margin-left: 150px;
+        margin-left: 105px;
         background-color: #044023;
     }
     .navegacion .Proyectos{
         position: absolute;
-        margin-left: 200px;
+        margin-left: 140px;
         background-color: #40200A;
     }
     .navegacion .Redes{
         position: absolute;
-        margin-left: 250px;
+        margin-left: 175px;
         background-color: #044001;
     }
 
@@ -193,12 +184,12 @@
     .contenedor-yo .contenedor-parrafo{
         position: absolute;
         font-family: 'Bebas Neue', cursive;
-        font-size: 35px;
-        width: 400px;
+        font-size: 25px;
+        width: 300px;
         height: 400;
         left: 50%;
         top: 50%;
-        margin-left: -200px;
+        margin-left: -150px;
         margin-top: -200px;
     }
 
@@ -246,5 +237,4 @@
         width: 100%;
         background-color: #044001;
     }
-
 }
