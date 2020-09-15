@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 html{
-    background-color: #ffedcb;
+    background: #ffefba; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffefba, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffefba, #ffffff);
 }
 * li{
     list-style: none;
@@ -12,7 +14,7 @@ html{
     justify-content: center;
     height: 570px;
     width: 100%;
-    background-color: rgb(180, 240, 131);
+    background-color: #bbd196;
     color: rgb(78, 54, 4);
     font-size: large;
     font-weight: bold;
@@ -38,13 +40,13 @@ html{
 
 
 .section-2{
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 570px;
     width: 100%;
-    background-color: rgb(131, 156, 240);
+    background-color: #ffd571;
     color: rgb(39, 5, 61);
     box-shadow: 4px 4px 10px rgb(53, 52, 52);
     border-radius: 25px;
@@ -71,15 +73,15 @@ html{
 }
 
 .section-3{
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 570px;
     width: 100%;
-    background-color: rgb(235, 137, 137);
+    background-color: #557571;
     box-shadow: 4px 4px 10px rgb(53, 52, 52);
-    color: rgb(94, 87, 190);
+    color: rgb(39, 5, 61);
     border-radius: 25px;
 
 }
@@ -105,15 +107,15 @@ html{
 }
 
 .section-4{
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 570px;
     width: 100%;
-    background-color: rgb(200, 199, 108);
+    background-color: #d49a89;
     box-shadow: 4px 4px 10px rgb(53, 52, 52);
-    color: rgb(66, 59, 168);
+    color: rgb(39, 5, 61);
     border-radius: 25px;
 }
 .section-4 .info-proyectos{
@@ -134,22 +136,21 @@ html{
     padding: 0px;
 }
 .section-5{
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 570px;
     width: 100%;
-    background-color: #ffedcb;
 
 }
 .section-5 .item{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    background-color: rgba(128, 128, 128, 0.315);
+    margin-top: 20px;
+    background-color: rgba(187, 187, 187, 0.212);
     width: 100%;
     height: 100%;
     box-shadow: 4px 4px 10px rgb(53, 52, 52);
@@ -176,7 +177,7 @@ html{
 footer{
     background-color: #353A3F;
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 20px;
     text-align: center;
     bottom: 0px;
