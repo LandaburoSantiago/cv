@@ -1,109 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Link con los estilos -->
-        <link rel="stylesheet" href="../static/pantallas-grandes.css">
-        <link rel="stylesheet" href="../static/pantallas-medianas.css">
-        <link rel="stylesheet" href="../static/pantallas-medianas-chicas.css">
-        <link rel="stylesheet" href="../static/pantallas-moviles.css">
-        <link rel="stylesheet" href="../static/pantallas-moviles-chicas.css">
-        <link rel="stylesheet" href="../static/pantallas-muychicas.css">
-        <!-- ---------------- -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Economica&display=swap" rel="stylesheet">
-        <script src="/static/js/scripts.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <title>Santiago Landaburo</title>
-        <script>
-            jQuery(document).ready(function(){
-                linkInterno = $('a[href^="#"]');
-                linkInterno.on('click',function(e) {
-                e.preventDefault();
-                var href = $(this).attr('href');
-                $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow', 'swing');
-                });
-            });  
-
-            (function(){
-                    var i = 1;
-                    var cambiar = setInterval( function(){
-                        $('.contenedor-imagenes').animate({
-                            opacity: 0
-                        }, function(){
-                            $(this).css({'background-image': 'url("/static/'+ i +'.jpg")'})
-                            .animate({
-                                opacity: 1
-                            });
-                            i++;
-                            if ( i == 7) { i = 1};
-                        });
-                    }, 3000);
-                
-            })();
-        </script>
-    </head>
-    <body>
-        <div class="navegacion">
-            <div class="Fotos" id="fotos">
-                <a href="#seccion-imagenes" style="text-decoration: none;"><button>F</button></a>
-                <label for="" class="lblFotosOculta" id="idFotos">Fotos</label>
-            </div>
-            <div class="Yo" id="yo">
-                <a href="#seccion-yo" style="text-decoration: none;"><button>?</button></a>
-                <label for="" class="lblYoOculta" id="idYo">¿Quien soy?</label>
-            </div>
-            <div class="Personales" id="personales">
-                <a href="#seccion-personales" style="text-decoration: none;"><button>DP</button></a>
-                <label for="" class="lblPersonalesOculta" id="idPersonales">Datos personales</label>
-            </div>
-            <div class="Academicos" id="academicos">
-                <a href="#seccion-academicos" style="text-decoration: none;"><button>DA</button></a>
-                <label for="" class="lblAcademicosOculta" id="idAcademicos">Datos academicos</label>
-            </div>
-            <div class="Proyectos" id="proyectos">
-                <a href="#seccion-proyectos" style="text-decoration: none;"><button>P</button></a>
-                <label for="" class="lblProyectosOculta" id="idProyectos">Proyectos</label>
-            </div>
-            <div class="Redes" id="redes">
-                <a href="#seccion-redes" style="text-decoration: none;"><button>RS</button></a>
-                <label for="" class="lblRedesOculta" id="idRedes">Redes sociales</label>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Santiago Landaburo</title>
+</head>
+<body>
+    <section class="section-1">  
+        <div class="imagen">
+            <img src="../assets/img/1.png" alt="Santiago Landaburo">
+            <p>
+                Hola mi nombre es Santiago Landaburo, estudiante de Licenciatura en Sistemas de Información y Desarrollador en proceso...
+                Esta es mi Web personal para que conozcas mas.
+            </p>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="info-educacion">
+            <h1>Educacion</h1>
+            <ul>
+                <li><i class="material-icons">school</i><b>Secundario: 2011-2017 </b>| Técnico en Computación | EET N° 2 "Pbro José María Colombo"</li>
+                <li><i class="material-icons">book</i><b>Universitario: 2018-Actualidad </b>| Licenciatura en Sistemas de Información | UADER-FCYT</li>
+            </ul>
+            <h1>Cursos</h1>
+            <ul>
+                <li>2019: Curso de Python | UADER-FCYT</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="info-personal">
+            <h1>Información Personal</h1>
+            <ul>
+                <li><i class="material-icons">today</i> <b>Fecha de nacimiento:</b> 12/11/1998 (21 años)</li>
+                <li><i class="material-icons">place</i> <b>Lugar de nacimiento:</b> Gualeguaychú, Entre Rios</li>
+                <li><i class="material-icons">mail</i> <b>E-mail:</b> santiagomartinlandaburo@gmail.com</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="info-proyectos">
+            <h1>Proyectos: </h1>
+            <ul>
+                <li><i class="material-icons">code</i><a href="http://proyecto-fotocopiadoras.herokuapp.com/" style="text-decoration: none; color: rgb(66, 59, 168);"><b>Proyecto fotocopiadoras:</b></a>(Flask, Html, CSS, Javascript) <span> App para calcular el precio de la copia de tu documento .pdf </span></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-5">
+        <div class="item">
+            <div class="item-git">
+                <a href="https://github.com/LandaburoSantiago">
+                    <img src="../assets/img/git.png" alt="">
+                </a>
             </div>
         </div>
-        <section class="contenedor-imagenes" id="seccion-imagenes">
-            
-        </section>  
-        <section class="contenedor-yo" id="seccion-yo">
-            <div class="contenedor-parrafo">
-                <p id="parrafo-1">
-                    Soy estudiante de licenciatura en sistemas de información en UADER - Facultad de Ciencia y Tecnología.
-                </p>
-                <p id="parrafo-2">
-                    Apasionado por la tecnología.
-                </p>
-                <p id="parrafo-3">   
-                    En mis tiempos libres soy Dj!.
-                </p>
-                
-            </div>  
-        </section>
-        <section class="contenedor-datos-personales" id="seccion-personales">
-        
-        </section>
-        <section class="contenedor-datos-academicos" id="seccion-academicos">
-            
-        </section>
-        <section class="contenedor-proyectos" id="seccion-proyectos">
-            
-        </section>
-        <section class="contenedor-redes" id="seccion-redes">
-            
-        </section>
-    </body>    
-    <footer>    
-        
-    </footer>
+        <div class="item">
+            <div class="item-link">
+                <a href="https://www.linkedin.com/in/santiago-martin-landaburo-322ab71b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6X3ng5QyT2S0%2F%2FpMp5Jdxg%3D%3D">
+                     <img src="../assets/img/link.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-mail">
+                <a href="mailto:santiagomartinlandaburo@gmail.com">
+                    <img src="../assets/img/mail.png" alt="">  
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>SANTIAGO LANDABURO | 2020</footer>
+</body>
 </html>

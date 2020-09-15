@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html{
+    background-color: #ffedcb;
+}
+* li{
+    list-style: none;
+}
+.section-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    background-color: rgb(180, 240, 131);
+    color: rgb(78, 54, 4);
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Numans', sans-serif;
+    border-radius: 25px;
+}
+
+.section-1 .imagen{
+    text-align: center;
+    padding-left: 10px;
+    
+}
+
+.section-1 .imagen img{
+    width: 300px;
+    height: 300px;
+}
+
+.section-1 .imagen p{
+    padding: 10px;
+}
+
+
+.section-2{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    background-color: rgb(131, 156, 240);
+    color: rgb(39, 5, 61);
+    border-radius: 25px;
+}
+
+.section-2 .info-educacion{
+    padding: 10px;
+}
+
+.section-2 .info-educacion h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+   
+}
+
+.section-2 .info-educacion ul{
+    padding: 0px;
+}
+.section-2 .info-educacion li {
+    padding: 0px;
+    font-size: 15px;
+    font-family: 'Numans', sans-serif;
+}
+
+.section-3{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    background-color: rgb(235, 137, 137);
+    color: rgb(94, 87, 190);
+    border-radius: 25px;
+
+}
+
+.section-3 .info-personal{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3 .info-personal h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+}
+.section-3 .info-personal ul{
+    padding: 0px;
+}
+.section-3 .info-personal li{
+    padding: 0px;
+    font-size: 14px;
+    font-family: 'Numans', sans-serif;
+}
+
+.section-4{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    background-color: rgb(200, 199, 108);
+    color: rgb(66, 59, 168);
+    border-radius: 25px;
+}
+.section-4 .info-proyectos{
+    padding: 10px;
+}
+
+.section-4 .info-proyectos h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+}
+.section-4 .info-proyectos li{
+    font-size: 14px;
+    font-family: 'Numans', sans-serif;
+}
+
+.section-4 .info-proyectos ul{
+    padding: 0px;
+}
+.section-5{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    background-color: #ffedcb;
+
+}
+.section-5 .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.356);
+    width: 100%;
+    height: 100%;
+
+    border-radius: 60px;
+    
+}
+
+.section-5 .item .item-git img{
+    filter: grayscale(100%);
+    width: 140px;
+    height: 120px;
+}
+.section-5 .item .item-link img{
+    filter: grayscale(100%);
+    width: 140px;
+    height: 120px;
+}
+.section-5 .item .item-mail img{
+    filter: grayscale(100%);
+    width: 140px;
+    height: 120px;
+}
+
+footer{
+    background-color: #353A3F;
+    color: white;
+    margin-top: 10px;
+    
+    text-align: center;
+    bottom: 0px;
+    padding: 20px;
+}
