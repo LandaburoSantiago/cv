@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 html{
     background: #ffefba; /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #ffefba, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
@@ -175,11 +176,12 @@ html{
 }
 
 footer{
-    background-color: #353A3F;
-    color: white;
+    background-color: rgb(91, 107, 126);
+    color: rgb(255, 236, 212);
     margin-top: 20px;
     border-radius: 20px;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
     bottom: 0px;
     padding: 20px;
 }
