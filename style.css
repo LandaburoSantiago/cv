@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 html{
-    background: #ffefba; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #ffefba, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #ffefba, #ffffff);
+    background-color: #eff2c0;
 }
 * li{
     list-style: none;
@@ -15,7 +13,8 @@ html{
     justify-content: center;
     height: 570px;
     width: 100%;
-    background-color: #bbd196;
+    /* background-color: #a1e5ab; */
+    background-color: #8cb369;
     color: rgb(78, 54, 4);
     font-size: large;
     font-weight: bold;
@@ -47,7 +46,8 @@ html{
     justify-content: center;
     height: 570px;
     width: 100%;
-    background-color: #ffd571;
+    /* background-color:#90baad; */
+    background-color: #5b8e7d;
     color: rgb(39, 5, 61);
     box-shadow: 4px 4px 10px rgb(53, 52, 52);
     border-radius: 25px;
@@ -80,7 +80,8 @@ html{
     justify-content: center;
     height: 570px;
     width: 100%;
-    background-color: #557571;
+    /* background-color:#8aa2a9; */
+    background-color: #f4a259;
     box-shadow: 4px 4px 10px rgb(53, 52, 52);
     color: rgb(39, 5, 61);
     border-radius: 25px;
@@ -114,7 +115,8 @@ html{
     justify-content: center;
     height: 570px;
     width: 100%;
-    background-color: #d49a89;
+    /* background-color: #717c89; */
+    background-color: #f4e285;
     box-shadow: 4px 4px 10px rgb(53, 52, 52);
     color: rgb(39, 5, 61);
     border-radius: 25px;
@@ -176,7 +178,7 @@ html{
 }
 
 footer{
-    background-color: rgb(91, 107, 126);
+    background-color: #2d2d2a;
     color: rgb(255, 236, 212);
     margin-top: 20px;
     border-radius: 20px;
