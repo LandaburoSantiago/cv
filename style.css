@@ -177,6 +177,21 @@ html{
     height: 120px;
 }
 
+.fixed-action-btn a{
+    background-color: #9b636e;
+    
+}
+
+.fixed-action-btn a:hover{
+    background-color: #88182e;
+    box-shadow: 4px 3px 10px rgb(53, 52, 52);
+}
+
+.fixed-action-btn a:focus{
+    background-color: #88182e;
+    box-shadow: 4px 3px 10px rgb(53, 52, 52);       
+}
+
 footer{
     background-color: #2d2d2a;
     color: rgb(255, 236, 212);

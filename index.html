@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link  rel="icon"   href="./assets/img/1.png" type="image/png" />
     <title>Santiago Landaburo</title>
 </head>
 <body>
+    <div class="fixed-action-btn">
+        <a href="./assets/cv.pdf" target="_blank" class="btn-floating btn-large">
+          <i class="large material-icons">description</i>
+        </a>
+    </div>
     <section class="section-1">  
         <div class="imagen">
             <img src="./assets/img/1.png" alt="Santiago Landaburo">
@@ -72,6 +78,15 @@
             </div>
         </div>
     </section>
+    <!-- <a href="" class="gotop"><button>IR ARRIBA</button></a> -->
     <footer>Santiago Landaburo | 2020</footer>
+
+
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, options);
+        });
+    </script>
 </body>
 </html>
