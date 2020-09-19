@@ -20,7 +20,7 @@
         </a>
         </div>
     </div>
-    <main class="container">
+    <main class="container" id="main">
         <section class="section-1">  
             <div class="imagen">
                 <img src="./assets/img/1.png" alt="Santiago Landaburo">
@@ -55,7 +55,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section-4">
+        <section class="section-4" id="section-4"> 
             <div class="info-proyectos">
                 <h4>Proyectos: </h4>
                 <ul>
@@ -63,7 +63,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section-5">
+        <section class="section-5" >
             <div class="item">
                 <div class="item-git">
                     <a href="https://github.com/LandaburoSantiago" target="_blank">
@@ -107,10 +107,26 @@
     <script>
         const floatButton = document.getElementById("fButton");
         const label = document.getElementById("label")
+        const section4 = document.getElementById("section-4")
+        const main = document.getElementById("main");
         const showLabel = () => label.className = "label-visible"
         const hideLabel = () => label.className = "label"
+        window.onscroll = () => {
+            let posBottomSection5 = section4.getBoundingClientRect();
+            if(posBottomSection5.top < 500){
+                console.log(posBottomSection5.bottom)
+                showLabel()
+            }else{
+                hideLabel()
+            }
+        }
         floatButton.onmouseover = showLabel
         floatButton.onmouseout  = hideLabel
+        main.onclick = () => {
+            if (label.className == "label-visible"){
+                hideLabel()
+            }
+        }
     </script>
 </body>
 </html>
