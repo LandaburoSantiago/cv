@@ -10,10 +10,15 @@
     <title>Santiago Landaburo</title>
 </head>
 <body>
-    <div class="fixed-action-btn">
+    <div class="fixed-action-btn" >
+        <div class="label" id="label">
+            <label for="">Descargar CV</label>
+        </div>
+        <div class="button" >
         <a href="./assets/cv.pdf" target="_blank" class="btn-floating btn-large">
-          <i class="large material-icons">description</i>
+          <i id="fButton" class="large material-icons">description</i>
         </a>
+        </div>
     </div>
     <main class="container">
         <section class="section-1">  
@@ -80,9 +85,15 @@
                     </a>
                 </div>
             </div>
+            <div class="item">
+                <div class="item-twitter">
+                    <a href="https://twitter.com/slandaburo" target="_blank">
+                        <img src="assets/img/tw.png" alt="">  
+                    </a>
+                </div>
+            </div>
         </main>  
     </div>  
-    <!-- <a href="" class="gotop"><button>IR ARRIBA</button></a> -->
     <footer>Santiago Landaburo | 2020</footer>
 
 
@@ -91,6 +102,15 @@
             var elems = document.querySelectorAll('.fixed-action-btn');
             var instances = M.FloatingActionButton.init(elems, options);
         });
+    </script>
+
+    <script>
+        const floatButton = document.getElementById("fButton");
+        const label = document.getElementById("label")
+        const showLabel = () => label.className = "label-visible"
+        const hideLabel = () => label.className = "label"
+        floatButton.onmouseover = showLabel
+        floatButton.onmouseout  = hideLabel
     </script>
 </body>
 </html>
