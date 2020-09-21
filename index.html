@@ -112,9 +112,8 @@
         const showLabel = () => label.className = "label-visible"
         const hideLabel = () => label.className = "label"
         window.onscroll = () => {
-            let posBottomSection5 = section4.getBoundingClientRect();
-            if(posBottomSection5.top < 500){
-                console.log(posBottomSection5.bottom)
+            let posBottomSection4 = section4.getBoundingClientRect();
+            if(posBottomSection4.top < 500){
                 showLabel()
             }else{
                 hideLabel()
