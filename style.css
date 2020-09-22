@@ -9,6 +9,10 @@ body{
     margin: 0;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 * li{
     list-style: none;
     margin-bottom: 20px;
@@ -39,7 +43,6 @@ i{
 
 .section-1 .imagen{
     text-align: center;
-    padding-left: 10px;
     
 }
 
@@ -307,4 +310,28 @@ footer{
     font-family: 'Quicksand', sans-serif;
     bottom: 0px;
     padding: 20px;
+}
+
+@media only screen and (max-width: 350px) {
+    .section-1 .imagen img{
+        width: 250px;
+        height: 250px
+    }
+    .section-2 .info-educacion ul{
+        padding: 18px;
+    }
+    .section-3 .info-personal ul{
+        padding: 18px;
+    }
+    .section-4 .info-proyectos ul{
+        padding: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 1366px) {
+    .section-1 .imagen img{
+        width: 360px;
+        height: 360px
+    }
 }
