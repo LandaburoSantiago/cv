@@ -3,36 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link  rel="icon"   href="./assets/img/1.png" type="image/png" />
+    <link  rel="icon" href="./assets/img/favicon.png" type="image/png"/>
     <title>Santiago Landaburo</title>
 </head>
 <body>
     <div class="fixed-action-btn" >
-        <div class="label" id="label">
+        <div class="label text" id="label">
             <label for="">Descargar CV</label>
         </div>
         <div class="button" >
-        <a href="./assets/cv.pdf" target="_blank" class="btn-floating btn-large">
-          <i id="fButton" class="large material-icons">description</i>
-        </a>
+            <a href="./assets/cv.pdf" target="_blank" class="btn-floating btn-large text">
+            <i id="fButton" class="large material-icons">description</i>
+            </a>
         </div>
     </div>
     <main class="container" id="main">
-        <section class="section-1">  
+        <section class="row skills justify-content-center mt-4">  
+            <div class="col-12">
+                <p class="text-center text" style="font-family: monospace; font-weight: bold;">Code skills</p>
+            </div>
+            <div class="col-2 text-center px-1 px-sm-3">
+                <img id="js-skill" class="mx-auto skill-image" src="./assets/img/skills/jsLogo.svg" alt=""/>
+                <div id="js-sub-skills" class="mt-1 sub-skills mx-auto">
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/jsLogo.svg" alt=""><div class="levels middle-level"></div><div class="levels middle-level"></div> 
+                    </div>
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/reactLogo.svg" alt=""><div class="levels low-level"></div>
+                    </div>
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/nodeLogo.svg" alt=""><div class="levels low-level"></div>
+                    </div> 
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/ajaxLogo.svg" alt=""><div class="levels low-level"></div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-2 text-center px-1 px-sm-3">
+                <img id="python-skill" class="mx-auto skill-image" src="./assets/img/skills/pyLogo.svg" alt=""/>
+                <div id="python-sub-skills" class="mt-1 sub-skills mx-auto">
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/pyLogo.svg" alt=""><div class="levels middle-level"></div><div class="levels middle-level"></div> 
+                    </div>
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/flaskLogo.svg" alt=""><div class="levels low-level"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 text-center px-1 px-sm-3">
+                <img id="php-skill" class="mx-auto skill-image" src="./assets/img/skills/phpLogo.svg" alt=""/>
+                <div id="php-sub-skills" class="mt-1 sub-skills mx-auto">
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/phpLogo.svg" alt=""><div class="levels low-level"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 text-center px-1 px-sm-3">
+                <img id="git-skill" class="mx-auto skill-image" src="./assets/img/skills/gitLogo.svg" alt=""/>
+                <div id="git-sub-skills" class="mt-1 sub-skills mx-auto">
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/githubLogo.svg" alt=""><div class="levels high-level"></div><div class="levels high-level"></div><div class="levels high-level"></div>
+                    </div>
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/gitlabLogo.svg" alt=""><div class="levels high-level"></div><div class="levels high-level"></div><div class="levels high-level"></div> 
+                    </div>    
+                </div>
+            </div>
+            <div class="col-2 text-center px-1 px-sm-3">
+                <img id="css-skill" class="mx-auto skill-image" src="./assets/img/skills/cssLogo.svg" alt=""/>
+                <div id="css-sub-skills" class="mt-1 sub-skills mx-auto">
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/cssLogo.svg" alt=""><div class="levels middle-level"></div><div class="levels middle-level"></div> 
+                    </div>
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/bootstrapLogo.svg" alt=""><div class="levels middle-level"></div><div class="levels middle-level"></div> 
+                    </div>
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/materializecssLogo.svg" alt=""><div class="levels low-level"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 text-center px-1 px-sm-3">
+                <img id="html-skill" class="mx-auto skill-image" src="./assets/img/skills/htmlLogo.svg" alt=""/>
+                <div id="html-sub-skills" class="mt-1 sub-skills mx-auto">
+                    <div class="d-flex align-items-center my-1">
+                        <img src="./assets/img/skills/htmlLogo.svg" alt=""><div class="levels high-level"></div><div class="levels high-level"></div><div class="levels high-level"></div>
+                    </div>    
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <a id="switch-theme" type="button" class="text-center link" onclick="ToggleTheme();" style="font-weight: bold;"><i class="material-icons">brightness_3</i>Cambiar al modo oscuro.</a>
+            </div>
+        </section>
+        <section class="section introduccion">  
             <div class="imagen">
                 <img src="./assets/img/1.png" alt="Santiago Landaburo">
             </div>
             <div class="descripcion">
                 <p>
-                    Hola mi nombre es Santiago Landaburo, estudiante de Licenciatura en Sistemas de Información y Desarrollador Jr en REBrit SRL.
+                    Hola mi nombre es Santiago Landaburo, estudiante de Licenciatura en Sistemas de Información y Desarrollador Jr.
                     Esta es mi Web personal para que puedas conocerme más.
                 </p>
             </div>
         </section>
-        <section class="section-2">
+        <section class="section informacion">
+            <div class="info-personal">
+                <h4>Información Personal</h4>
+                <ul>
+                    <li><i class="material-icons">today</i> <b>Fecha de nacimiento:</b> 12/11/1998 (22 años)</li>
+                    <li><i class="material-icons">place</i> <b>Lugar de nacimiento:</b> Gualeguaychú, Entre Rios</li>
+                    <li><i class="material-icons">mail</i> <b>E-mail:</b> santiagomartinlandaburo@gmail.com</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section experiencia">
+            <div class="experiencia-laboral">
+                <h4>Experiencia laboral</h4>
+                <ul>
+                    <li><b>REBrit SRL</b> Marzo 2021 - Junio 2021 (Desarrollo de paginas web utilizando un framework de php creado en la empresa llamado REBrit generator. Mis principales tareas fueron de frontend.)</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section educacion">
             <div class="info-educacion">
                 <h4>Educación</h4>
                 <ul>
@@ -45,27 +142,17 @@
                 </ul>
             </div>
         </section>
-        <section class="section-3">
-            <div class="info-personal">
-                <h4>Información Personal</h4>
-                <ul>
-                    <li><i class="material-icons">today</i> <b>Fecha de nacimiento:</b> 12/11/1998 (22 años)</li>
-                    <li><i class="material-icons">place</i> <b>Lugar de nacimiento:</b> Gualeguaychú, Entre Rios</li>
-                    <li><i class="material-icons">mail</i> <b>E-mail:</b> santiagomartinlandaburo@gmail.com</li>
-                </ul>
-            </div>
-        </section>
-        <section class="section-4" id="section-4"> 
+        <section class="section proyectos" id="section-4"> 
             <div class="info-proyectos">
                 <h4>Proyectos: </h4>
                 <ul>
-                    <li><i class="material-icons">code</i><a href="http://proyecto-fotocopiadoras.herokuapp.com/" style="text-decoration: none; color: #eae1e1;"><b>Proyecto fotocopiadoras:</b></a> (Flask, Html, CSS, Javascript, Firebase) <span> App para librerias. Calcula el precio de la copia de un documento .PDF.</span></li>
-                    <li><i class="material-icons">code</i><a href="https://landaburosantiago.github.io/SPA-WebPack/" style="text-decoration: none; color: #eae1e1;"><b>Web de Péliculas y Series:</b></a> (Node JS, Webpack, HTML, CSS, Bootstrap, API) <span> SPA para la catedra de Programación Avanzada 2020 | UADER FCYT.</span></li>
-                    <li><i class="material-icons">code</i><a href="https://friendly-knuth-fbed6b.netlify.app/" style="text-decoration: none; color: #eae1e1;"><b>Web de Péliculas y Series:</b></a> (React, Bootstrap) <span> SPA desarrollada en React JS para la catedra de Programación Avanzada 2020 | UADER FCYT</span></li>
+                    <li><i class="material-icons">code</i><a href="http://proyecto-fotocopiadoras.herokuapp.com/" target="_blank" class="link"><b>Proyecto fotocopiadoras:</b></a> (Flask, Html, CSS, Javascript, Firebase) <span> App para librerias. Calcula el precio de la copia de un documento .PDF.</span></li>
+                    <li><i class="material-icons">code</i><a href="https://landaburosantiago.github.io/SPA-WebPack/" target="_blank" class="link"><b>Web de Péliculas y Series:</b></a> (Node JS, Webpack, HTML, CSS, Bootstrap, API) <span> SPA para la catedra de Programación Avanzada 2020 | UADER FCYT.</span></li>
+                    <li><i class="material-icons">code</i><a href="https://friendly-knuth-fbed6b.netlify.app/" target="_blank" class="link"><b>Web de Péliculas y Series:</b></a> (React, Bootstrap) <span> SPA desarrollada en React JS para la catedra de Programación Avanzada 2020 | UADER FCYT</span></li>
                 </ul>
             </div>
         </section>
-        <section class="section-5" >
+        <section class="section-redes" >
             <div class="item">  
                 <div class="item-git">
                     <a href="https://github.com/LandaburoSantiago" target="_blank">
@@ -96,7 +183,7 @@
             </div>
         </main>  
     </div>  
-    <footer>Santiago Landaburo | 2021</footer>
+    <footer>Con <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i> Santiago Landaburo | 2021</footer>
 
 
     <script>
@@ -129,5 +216,125 @@
             }
         }
     </script>
+    <script>
+        const jsSkill = document.getElementById("js-skill");
+        const pythonSkill = document.getElementById("python-skill");
+        const phpSkill = document.getElementById("php-skill");
+        const gitSkill = document.getElementById("git-skill");
+        const cssSkill = document.getElementById("css-skill");
+        const htmlSkill = document.getElementById("html-skill");
+        jsSkill.addEventListener("mouseover", 
+        ()=>{
+            document.getElementById(`js-sub-skills`).classList.toggle("sub-skills-show");
+        })
+        jsSkill.addEventListener("mouseout",
+        ()=>{
+            document.getElementById(`js-sub-skills`).classList.toggle("sub-skills-show");
+        })
+
+        pythonSkill.addEventListener("mouseover",  
+        ()=>{
+            document.getElementById(`python-sub-skills`).classList.toggle("sub-skills-show");
+        })
+        pythonSkill.addEventListener("mouseout", 
+        ()=>{
+            document.getElementById(`python-sub-skills`).classList.toggle("sub-skills-show");
+        })
+
+        phpSkill.addEventListener("mouseover",  
+        ()=>{
+            document.getElementById(`php-sub-skills`).classList.toggle("sub-skills-show");
+        })
+        phpSkill.addEventListener("mouseout", 
+        ()=>{
+            document.getElementById(`php-sub-skills`).classList.toggle("sub-skills-show");
+        })
+
+        gitSkill.addEventListener("mouseover",  
+        ()=>{
+            document.getElementById(`git-sub-skills`).classList.toggle("sub-skills-show");
+        })
+        gitSkill.addEventListener("mouseout", 
+        ()=>{
+            document.getElementById(`git-sub-skills`).classList.toggle("sub-skills-show");
+        })
+
+        cssSkill.addEventListener("mouseover",  
+        ()=>{
+            document.getElementById(`css-sub-skills`).classList.toggle("sub-skills-show");
+        })
+        cssSkill.addEventListener("mouseout",
+         ()=>{
+            document.getElementById(`css-sub-skills`).classList.toggle("sub-skills-show");
+        })
+
+        htmlSkill.addEventListener("mouseover",  
+        ()=>{
+            document.getElementById(`html-sub-skills`).classList.toggle("sub-skills-show");
+        })
+        htmlSkill.addEventListener("mouseout", 
+        ()=>{
+            document.getElementById(`html-sub-skills`).classList.toggle("sub-skills-show");
+        })
+    </script>
+    <script>
+        const bgLight = "#cbbcb1";
+        const bgSectionLight = "#f1e1c3";
+        const fontColorLight = "#222222"
+        const bgDark = "#222831";
+        const bgSectionDark = "#30475e"
+        const fontColorDark = "white"
+        const floatCvLight = "#cfc5a5"
+        const floatCvLightHover = "#cfc5a5"
+        const labelCvLight = "#eae3c8"
+        const floatCvDark = "#464f41"
+        const floatCvDarkHover = "#464f41"
+        const labelCvDark = "#56776c"
+
+        if(localStorage.getItem("tema")==null){localStorage.setItem("tema", "light")};
+        document.addEventListener("DOMContentLoaded", ()=>{
+            if (localStorage.getItem("tema") == "light"){
+                document.documentElement.style.setProperty("--bg", bgLight);
+                document.documentElement.style.setProperty("--bg-section", bgSectionLight);
+                document.documentElement.style.setProperty("--color-font", fontColorLight);
+                document.documentElement.style.setProperty("--bg-button-float", floatCvLight);
+                document.documentElement.style.setProperty("--bg-button-float-hover", floatCvLightHover);
+                document.documentElement.style.setProperty("--bg-button-label", labelCvLight);
+                document.getElementById("switch-theme").innerHTML = '<i class="material-icons">brightness_3</i>Cambiar al modo oscuro.';
+            }else if(localStorage.getItem("tema") == "dark"){
+                document.documentElement.style.setProperty("--bg", bgDark);
+                document.documentElement.style.setProperty("--bg-section", bgSectionDark);
+                document.documentElement.style.setProperty("--color-font", fontColorDark);
+                document.documentElement.style.setProperty("--bg-button-float", floatCvDark);
+                document.documentElement.style.setProperty("--bg-button-float-hover", floatCvDarkHover);
+                document.documentElement.style.setProperty("--bg-button-label", labelCvDark);
+                document.getElementById("switch-theme").innerHTML = '<i class="material-icons">brightness_5</i>Cambiar al modo claro.';
+
+            }
+        })
+        function ToggleTheme(){
+            if (localStorage.getItem("tema") == "light"){
+                document.documentElement.style.setProperty("--bg", bgDark);
+                document.documentElement.style.setProperty("--bg-section", bgSectionDark);
+                document.documentElement.style.setProperty("--color-font", fontColorDark);
+                document.documentElement.style.setProperty("--bg-button-float", floatCvDark);
+                document.documentElement.style.setProperty("--bg-button-float-hover", floatCvDarkHover);
+                document.documentElement.style.setProperty("--bg-button-label", labelCvDark);
+                localStorage.setItem("tema", "dark");
+                document.getElementById("switch-theme").innerHTML = '<i class="material-icons">brightness_5</i>Cambiar al modo claro.';
+            }else if(localStorage.getItem("tema") == "dark"){
+                document.documentElement.style.setProperty("--bg", bgLight);
+                document.documentElement.style.setProperty("--bg-section", bgSectionLight);
+                document.documentElement.style.setProperty("--color-font", fontColorLight);
+                document.documentElement.style.setProperty("--bg-button-float", floatCvLight);
+                document.documentElement.style.setProperty("--bg-button-float-hover", floatCvLightHover);
+                document.documentElement.style.setProperty("--bg-button-label", labelCvLight);
+                localStorage.setItem("tema", "light");
+                document.getElementById("switch-theme").innerHTML = '<i class="material-icons">brightness_3</i>Cambiar al modo oscuro.';
+
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
