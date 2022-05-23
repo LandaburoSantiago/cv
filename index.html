@@ -12,7 +12,17 @@
     <title>Santiago Landaburo</title>
 </head>
 <body>
-    <div class="fixed-action-btn" >
+    <div class="fixed-action-btn" style="bottom: 85px;">
+        <div class="label text" id="labelThemeMode">
+            
+        </div>
+        <div class="button" >
+            <a id="switch-theme" type="button" onclick="ToggleTheme();" class="btn-floating btn-large text">
+                <i class="material-icons">brightness_3</i>
+            </a>
+        </div>
+    </div>
+    <div class="fixed-action-btn">
         <div class="label text" id="label">
             <label for="">Descargar CV</label>
         </div>
@@ -31,13 +41,13 @@
                 <img id="js-skill" class="mx-auto skill-image" src="./assets/img/skills/jsLogo.svg" alt=""/>
                 <div id="js-sub-skills" class="mt-1 sub-skills mx-auto">
                     <div class="d-flex align-items-center my-1">
-                        <img src="./assets/img/skills/jsLogo.svg" alt=""><div class="levels middle-level"></div><div class="levels middle-level"></div> 
+                        <img src="./assets/img/skills/jsLogo.svg" alt=""><div class="levels high-level"></div><div class="levels high-level"></div><div class="levels high-level"></div> 
                     </div>
                     <div class="d-flex align-items-center my-1">
-                        <img src="./assets/img/skills/reactLogo.svg" alt=""><div class="levels low-level"></div>
+                        <img src="./assets/img/skills/reactLogo.svg" alt=""><div class="levels middle-level"></div><div class="levels middle-level"></div>
                     </div>
                     <div class="d-flex align-items-center my-1">
-                        <img src="./assets/img/skills/nodeLogo.svg" alt=""><div class="levels low-level"></div>
+                        <img src="./assets/img/skills/nodeLogo.svg" alt=""><div class="levels middle-level"></div><div class="levels middle-level"></div>
                     </div> 
                     <div class="d-flex align-items-center my-1">
                         <img src="./assets/img/skills/ajaxLogo.svg" alt=""><div class="levels low-level"></div>
@@ -95,10 +105,7 @@
                         <img src="./assets/img/skills/htmlLogo.svg" alt=""><div class="levels high-level"></div><div class="levels high-level"></div><div class="levels high-level"></div>
                     </div>    
                 </div>
-            </div>
-            <div class="col-12 text-center">
-                <a id="switch-theme" type="button" class="text-center link" onclick="ToggleTheme();" style="font-weight: bold;"><i class="material-icons">brightness_3</i>Cambiar al modo oscuro.</a>
-            </div>
+            </div>            
         </section>
         <section class="section introduccion">  
             <div class="imagen">
@@ -106,21 +113,23 @@
             </div>
             <div class="descripcion">
                 <p>
-                    Hola mi nombre es Santiago Landaburo, estudiante de Licenciatura en Sistemas de Información y Desarrollador Jr.
+                    Hola mi nombre es Santiago Landaburo, Analista en Sistemas de Información, estudiante de Licenciatura en Sistemas de Información y Desarrollador Jr.
                     Esta es mi Web personal para que puedas conocerme más.
                 </p>
             </div>
         </section>
+        <hr style="background-color:white"/>
         <section class="section informacion">
             <div class="info-personal">
                 <h4>Información Personal</h4>
                 <ul>
-                    <li><i class="material-icons">today</i> <b>Fecha de nacimiento:</b> 12/11/1998 (22 años)</li>
+                    <li><i class="material-icons">today</i> <b>Fecha de nacimiento:</b> 12/11/1998 (23 años)</li>
                     <li><i class="material-icons">place</i> <b>Lugar de nacimiento:</b> Gualeguaychú, Entre Rios</li>
                     <li><i class="material-icons">mail</i> <b>E-mail:</b> santiagomartinlandaburo@gmail.com</li>
                 </ul>
             </div>
         </section>
+        <hr style="background-color:white"/>
         <section class="section experiencia">
             <div class="experiencia-laboral">
                 <h4>Experiencia laboral</h4>
@@ -129,19 +138,18 @@
                 </ul>
             </div>
         </section>
+        <hr style="background-color:white"/>
         <section class="section educacion">
             <div class="info-educacion">
                 <h4>Educación</h4>
                 <ul>
                     <li><i class="material-icons">school</i><b>Secundario: 2011-2017 </b>| Técnico en Computación | EET N° 2 "Pbro José María Colombo"</li>
+                    <li><i class="material-icons">book</i><b>Terciario: 2018-2022 </b>| Analista en Sistemas de Información | UADER-FCYT</li>
                     <li><i class="material-icons">book</i><b>Universitario: 2018-Actualidad </b>| Licenciatura en Sistemas de Información | UADER-FCYT</li>
-                </ul>
-                <h4>Cursos</h4>
-                <ul>
-                    <li>2019: Curso de Python | UADER-FCYT</li>
                 </ul>
             </div>
         </section>
+        <hr style="background-color:white"/>
         <section class="section proyectos" id="section-4"> 
             <div class="info-proyectos">
                 <h4>Proyectos: </h4>
@@ -152,6 +160,7 @@
                 </ul>
             </div>
         </section>
+        <hr style="background-color:white"/>
         <section class="section-redes" >
             <div class="item">  
                 <div class="item-git">
@@ -183,7 +192,7 @@
             </div>
         </main>  
     </div>  
-    <footer>Con <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i> Santiago Landaburo | 2021</footer>
+    <footer>Con <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i> Santiago Landaburo | 2022</footer>
 
 
     <script>
@@ -195,24 +204,32 @@
 
     <script>
         const floatButton = document.getElementById("fButton");
+        const floatButtonSwithTheme = document.getElementById("switch-theme");
         const label = document.getElementById("label")
+        const labelThemeMode = document.getElementById("labelThemeMode")
         const section4 = document.getElementById("section-4")
         const main = document.getElementById("main");
-        const showLabel = () => label.className = "label-visible"
-        const hideLabel = () => label.className = "label"
+        const showLabel = (label) => label.className = "label-visible"
+        const hideLabel = (label) => label.className = "label"
         window.onscroll = () => {
             let posBottomSection4 = section4.getBoundingClientRect();
             if(posBottomSection4.top < 500){
-                showLabel()
+                showLabel(label)
             }else{
-                hideLabel()
+                hideLabel(label)
             }
         }
-        floatButton.onmouseover = showLabel
-        floatButton.onmouseout  = hideLabel
+        floatButton.onmouseover = ()=>showLabel(label)
+        floatButton.onmouseout  = ()=>hideLabel(label)
+        floatButtonSwithTheme.onmouseover = ()=>{
+            showLabel(labelThemeMode)
+        }
+        floatButtonSwithTheme.onmouseout  = ()=>{
+            hideLabel(labelThemeMode)
+        }
         main.onclick = () => {
             if (label.className == "label-visible"){
-                hideLabel()
+                hideLabel(label)
             }
         }
     </script>
@@ -294,6 +311,7 @@
         if(localStorage.getItem("tema")==null){localStorage.setItem("tema", "light")};
         document.addEventListener("DOMContentLoaded", ()=>{
             if (localStorage.getItem("tema") == "light"){
+                document.getElementById("labelThemeMode").innerHTML = '<label for="">Cambiar a modo oscuro</label>'
                 document.documentElement.style.setProperty("--bg", bgLight);
                 document.documentElement.style.setProperty("--bg-section", bgSectionLight);
                 document.documentElement.style.setProperty("--color-font", fontColorLight);
@@ -302,6 +320,7 @@
                 document.documentElement.style.setProperty("--bg-button-label", labelCvLight);
                 document.getElementById("switch-theme").innerHTML = '<i class="material-icons">brightness_3</i>Cambiar al modo oscuro.';
             }else if(localStorage.getItem("tema") == "dark"){
+                document.getElementById("labelThemeMode").innerHTML = '<label for="">Cambiar a modo claro</label>'
                 document.documentElement.style.setProperty("--bg", bgDark);
                 document.documentElement.style.setProperty("--bg-section", bgSectionDark);
                 document.documentElement.style.setProperty("--color-font", fontColorDark);
@@ -314,6 +333,7 @@
         })
         function ToggleTheme(){
             if (localStorage.getItem("tema") == "light"){
+                document.getElementById("labelThemeMode").innerHTML = '<label for="">Cambiar a modo claro</label>'
                 document.documentElement.style.setProperty("--bg", bgDark);
                 document.documentElement.style.setProperty("--bg-section", bgSectionDark);
                 document.documentElement.style.setProperty("--color-font", fontColorDark);
@@ -323,6 +343,7 @@
                 localStorage.setItem("tema", "dark");
                 document.getElementById("switch-theme").innerHTML = '<i class="material-icons">brightness_5</i>Cambiar al modo claro.';
             }else if(localStorage.getItem("tema") == "dark"){
+                document.getElementById("labelThemeMode").innerHTML = '<label for="">Cambiar a modo oscuro</label>'
                 document.documentElement.style.setProperty("--bg", bgLight);
                 document.documentElement.style.setProperty("--bg-section", bgSectionLight);
                 document.documentElement.style.setProperty("--color-font", fontColorLight);
