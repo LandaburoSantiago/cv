@@ -113,8 +113,10 @@
             </div>
             <div class="descripcion">
                 <p>
-                    Hola mi nombre es Santiago Landaburo, Analista en Sistemas de Información, estudiante de Licenciatura en Sistemas de Información y Desarrollador Jr.
-                    Esta es mi Web personal para que puedas conocerme más.
+                    Hola mi nombre es Santiago Landaburo soy Analista en Sistemas de Información y continuo estudiando para la Licenciatura en Sistemas de Información y Desarrollador Jr.
+                    <br/>
+                    <br/>
+                    Actualmente estoy trabajando en <a target="_blank" href="https://bombieri.com.ar/">BOMBIERI</a> como desarrollador Javascript donde principalemente realizo tareas de frontend (ReactJS). También realizo tareas de backend (NestJS)
                 </p>
             </div>
         </section>
@@ -135,6 +137,7 @@
                 <h4>Experiencia laboral</h4>
                 <ul>
                     <li><b>REBrit SRL</b> Marzo 2021 - Junio 2021 (Desarrollo de sitios web de tipo Fintech utilizando un framework de php creado en la empresa llamado REBrit generator. Mis principales tareas fueron de frontend.)</li>
+                    <li><b>Bombieri</b> Junio 2021 - Actualidad (Desarrollador de aplicaciones web con tecnologías Javascript)</li>
                 </ul>
             </div>
         </section>
@@ -157,6 +160,7 @@
                     <li><i class="material-icons">code</i><a href="http://proyecto-fotocopiadoras.herokuapp.com/" target="_blank" class="link"><b>Proyecto fotocopiadoras:</b></a> (Flask, Html, CSS, Javascript, Firebase) <span> App para librerias. Calcula el precio de la copia de un documento .PDF.</span></li>
                     <li><i class="material-icons">code</i><a href="https://landaburosantiago.github.io/SPA-WebPack/" target="_blank" class="link"><b>Web de Péliculas y Series:</b></a> (Node JS, Webpack, HTML, CSS, Bootstrap, API) <span> SPA para la catedra de Programación Avanzada 2020 | UADER FCYT.</span></li>
                     <li><i class="material-icons">code</i><a href="https://friendly-knuth-fbed6b.netlify.app/" target="_blank" class="link"><b>Web de Péliculas y Series:</b></a> (React, Bootstrap) <span> SPA desarrollada en React JS para la catedra de Programación Avanzada 2020 | UADER FCYT</span></li>
+                    <li><i class="material-icons">code</i><a href="https://funko-pop-store-frontend.vercel.app/" target="_blank" class="link"><b>FunkoPopStore:</b></a> (React, Nestjs, PostgreSQL, Firebase) <span>Proyecto final para el titulo de Analista en sistemas. Para este proyecto se realizó tanto el diseño del sistema como la implementación. Se trata de un e-commerce de Funko Pops para la ciudad de Concepción del Uruguay. </span></li>
                 </ul>
             </div>
         </section>
@@ -192,7 +196,7 @@
             </div>
         </main>  
     </div>  
-    <footer>Con <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i> Santiago Landaburo | 2022</footer>
+    <footer>Con <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i> Santiago Landaburo | <span id="year"></span></footer>
 
 
     <script>
@@ -358,6 +362,10 @@
 
             }
         }
+    </script>
+    <script>
+        const year = new Date().getFullYear();
+        document.getElementById("year").innerHTML = year;
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>

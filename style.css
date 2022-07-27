@@ -118,7 +118,7 @@ i{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 470px;
+    min-height: 470px;
     background-color: transparent;
     /* background-color: #5b8e7d; */
     color: var(--color-font);
