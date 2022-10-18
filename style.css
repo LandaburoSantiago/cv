@@ -407,3 +407,22 @@ footer{
         height: 360px
     }
 }
+
+.loader{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    z-index: 1000;    
+    top: 0;
+
+}
+.loader span{
+    color: var(--color-font);
+    font-weight: 200;
+    font-size: 20px;
+}
