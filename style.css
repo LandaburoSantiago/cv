@@ -220,6 +220,12 @@ i{
     letter-spacing: 1.5px;
 }
 
+.experiencia .experiencia-laboral .experiencia-laboral-items{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 
 .proyectos .info-proyectos h4{
     text-align: center;
