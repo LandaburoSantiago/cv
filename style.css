@@ -29,10 +29,6 @@ i{
     color: var(--color-font);
 }
 
-#fButton{
-    color: var(--color-font);
-}
-
 .levels{
     margin: 0 1px;
     float: right;
@@ -108,6 +104,8 @@ i{
     }
 }
 
+
+
 .fixed-buttons{
     display: flex;
     flex-direction: column;
@@ -118,7 +116,7 @@ i{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 470px;
+    min-height: 100vh;
     background-color: transparent;
     /* background-color: #5b8e7d; */
     color: var(--color-font);
@@ -126,33 +124,60 @@ i{
     /* margin-top: 20px; */
 }
 
-
+.introduccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    background: #f46b4553;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea94949, #f46b4553);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea94949, #f46b4553); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 25px;
+}
 
 .introduccion .imagen{
-    text-align: center;    
+    padding: 30px;
 }
-
-.introduccion .imagen img{
-    width: 300px;
+.introduccion .imagen img{    
     height: 300px;
+    width: auto;
 }
 
-@media (min-width: 320px) and (max-width: 400px)  {
-    .introduccion .imagen img{
-        width: 250px;
-        height: 250px;
-    }
-}
 
 .introduccion .descripcion{
-    margin-top: 50px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    min-height: inherit;
+    gap: 16px;
     padding: 35px;
     font-family: 'Numans', sans-serif;
     font-weight: bold;
-    text-align: center;
+    line-height: 24px;
+}
+.introduccion .descripcion h4 span{
+    font-weight: 900;
 }
 
+@media (max-width: 570px)  {   
+    .introduccion{
+        flex-direction: column;        
+        background: -webkit-linear-gradient(to bottom, #eea94949, #f46b4553);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #eea94949, #f46b4553); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .introduccion .descripcion{
+        text-align: center;
+        justify-content: center;
+        min-height: max-content;
+        gap: 16px;
+    }
+    
+    .introduccion .imagen img{
+        height: 250px;
+        width: auto;
+        text-align: center;
+    }
+}
 
 
 .educacion .info-educacion h4{
@@ -270,7 +295,12 @@ i{
 .section-redes .item img{
     width: 50px;
     height: 50px;
-    vertical-align: middle;
+    vertical-align: middle;    
+}
+
+.invert-filter-img-social-network{
+    filter: invert();
+    -webkit-filter: invert();
 }
 
 
@@ -297,11 +327,13 @@ i{
 
 .fixed-action-btn {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
 }
 
 .label{
-    background-color: var(--bg-button-label);
+    background: #f46b45ba;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea949cc, #f46b45ba);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea949cc, #f46b45ba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     margin-right: -30px;
     opacity: 0;
@@ -314,7 +346,9 @@ i{
 }
 
 .label-visible{
-    background-color: var(--bg-button-label);
+    background: #f46b45ba;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea949cc, #f46b45ba);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea949cc, #f46b45ba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     margin-right: -30px;
     opacity: 1;
@@ -327,6 +361,7 @@ i{
 }
 .label-visible label{
     color: var(--color-font);
+    font-weight: 700;
     font-size: 10px;
 }
 
@@ -357,7 +392,10 @@ i{
 
 
 .fixed-action-btn a{
-    background-color: var(--bg-button-float);
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea949, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea949, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
 }
 
 .fixed-action-btn a:hover{
