@@ -50,10 +50,10 @@
             </div>
             <div class="button">
                 <a href="./assets/cvES.pdf" target="_blank" class="es d-none btn-floating btn-large text ">                
-                <i id="fButton" class="large material-icons">description</i>
+                    <i id="fButtonEs" class="large material-icons">description</i>
                 </a>
                 <a href="./assets/cvEN.pdf" target="_blank" class="en d-none btn-floating btn-large text ">
-                    <i id="fButton" class="large material-icons">description</i>
+                    <i id="fButtonEn" class="large material-icons">description</i>
                 </a>
             </div>
         </div>
@@ -204,7 +204,8 @@
     </script>
 
     <script>
-        const floatButton = document.getElementById("fButton");
+        const floatButtonEs = document.getElementById("fButtonEs");
+        const floatButtonEn = document.getElementById("fButtonEn");
         const floatButtonSwithTheme = document.getElementById("switch-theme");
         const label = document.getElementById("label")
         const labelThemeMode = document.getElementById("labelThemeMode")
@@ -220,8 +221,11 @@
                 hideLabel(label)
             }
         }
-        floatButton.onmouseover = ()=>showLabel(label)
-        floatButton.onmouseout  = ()=>hideLabel(label)
+        
+        floatButtonEs.onmouseover = ()=>{showLabel(label)}
+        floatButtonEs.onmouseout  = ()=>hideLabel(label)
+        floatButtonEn.onmouseover = ()=>{showLabel(label)}
+        floatButtonEn.onmouseout  = ()=>hideLabel(label)
         floatButtonSwithTheme.onmouseover = ()=>{
             showLabel(labelThemeMode)
         }
