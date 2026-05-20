@@ -1,254 +1,523 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Santiago Landaburo</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Santiago Landaburo - Full Stack Developer">
-    <meta name="author" content="Santiago Landaburo">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/kube.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/custom.min.css" />
-    <link rel="shortcut icon" href="img/favicon.png" />
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<style>
-		.intro h1:before {
-			/* Edit this with your name or anything else */
-			content: 'Santiago';
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santiago Martin Landaburo | Full Stack Software Engineer</title>
+  <meta name="description"
+    content="Portfolio of Santiago Martin Landaburo, Full Stack Software Engineer focused on digital products, scalable systems, and business-oriented software solutions.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-	<!-- Navigation -->
-	<div class="main-nav">
-		<div class="container">
-			<header class="group top-nav">
-				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-				    <span class="logo">Santiago Landaburo</span>
-				</div>
-			    <nav id="navbar-1" class="navbar item-nav">
-				    <ul>
-				        <li class="active"><a href="#about">About</a></li>
-				        <li><a href="#experiences">Experiences</a></li>
-				        <li><a href="#achievements">Achievements</a></li>
-				        <li><a href="#skills">Skills</a></li>
-				    </ul>
-				</nav>
-			</header>
-		</div>
-	</div>
+  <div class="background-orb orb-a" data-parallax="0.12" aria-hidden="true"></div>
+  <div class="background-orb orb-b" data-parallax="0.07" aria-hidden="true"></div>
+  <div class="background-grid" aria-hidden="true"></div>
 
-	<!-- Introduction -->
-	<div class="intro section" id="about">
-		<div class="container">
-			<p>Hi, I’m Santiago Landaburo</p>
-			<div class="units-row units-split wrap">
-				<div style="height: 118px;"  class="unit-20">
-					<img style="height: 118px; width: 118px;" src="img/photo.jpeg" alt="Avatar">
-				</div>
-				<div style="height: 170px;" class="unit-80">
-					<h1>I'm<br><span id="typed"></span></h1>					
-				</div>
-				<p>
-				I'm a <span id="age">24</span>-year-old Full Stack programmer with a deep passion for coding. I proudly graduated with a Bachelor's degree in Information Systems in September 2024.
-					<br/>
-					<br/>
-				In addition to my technical skills, I bring persistence, enthusiasm, and a genuine love for programming to every project I undertake. I thrive in team environments and excel in communication, making collaboration a seamless and enjoyable experience.
-					<br/>
-					<br/>
-				I invite you to explore my portfolio to discover more about me and my work. Thank you for visiting, and feel free to reach out for any inquiries or opportunities to work together!
-				</p>				
-			</div>
-		</div>
-	</div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrapper">
+      <a href="#top" class="brand">SML</a>
+      <nav class="site-nav" aria-label="Main navigation" data-i18n-attr="aria-label:nav.aria">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#personal-projects" data-i18n="nav.personalProjects">Personal Projects</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language selector"
+        data-i18n-attr="aria-label:language.selector">
+        <button class="lang-button" type="button" data-lang="es" aria-pressed="false">ES</button>
+        <button class="lang-button" type="button" data-lang="en" aria-pressed="true">EN</button>
+      </div>
+    </div>
+  </header>
 
-	<!-- Work Experience -->
-	<div class="work section second" id="experiences">
-		<div class="container">
-			<h1>Work<br>Experiences</h1>
-			<ul class="work-list">
-				<li>June 2021 - Currently</li>
-				<li><a target="_blank" href="https://www.bombieri.com.ar/">Bombieri</a></li>
-				<li>Full Stack Developer</li>
-				<li>At Bombieri, I serve as a Full Stack Developer, where I create user interfaces with React, meticulously following pixel-perfect design guidelines. Additionally, I handle server-side tasks using Nest JS and utilize Postgre SQL as the database. I also employ Docker for containerization and Git for version control.
-					<br/>
-					Furthermore, I contribute as an analyst, engaging in requirement analysis and development to ensure the project's success from a strategic perspective.</li>
-			</ul>
-			<ul class="work-list">
-				<li>March 2021 - June 2021</li>
-				<li><a  target="_blank" href="https://rebrit.ar/">Rebrit SRL</a></li>
-				<li>Web Developer</li>
-				<li>At Rebrit SRL, I performed frontend tasks, meticulously adhering to pixel-perfect design guidelines. Additionally, I handled the integration with the PHP backend, ensuring seamless communication between the frontend and backend components. Git was also used for version control to maintain codebase integrity.</li>
-			</ul>
-		</div>
-	</div>
+  <main>
+    <section class="hero section">
+      <div class="container hero-layout">
+        <div class="hero-content reveal">
+          <span class="eyebrow" data-i18n="hero.eyebrow">Digital Product Engineering</span>
+          <h1>Santiago Martin Landaburo</h1>
+          <h2 data-i18n="hero.title">Full Stack Software Engineer</h2>
+          <p class="hero-intro" data-i18n="hero.intro">Building digital products with a business-oriented
+            mindset.</p>
+          <p class="hero-detail" data-i18n="hero.detail">
+            I build digital products end-to-end, combining technical execution, product thinking, and business context
+            from analysis and solution design to deployment and iteration.
+          </p>
+          <div class="cta-group">
+            <a class="button button-primary" href="#projects" data-i18n="hero.ctaProjects">View Projects</a>
+            <a class="button button-secondary" href="#contact" data-i18n="hero.ctaContact">Contact Me</a>
+            <a class="button button-ghost" href="https://www.linkedin.com/in/santiago-martin-landaburo" target="_blank"
+              rel="noreferrer noopener">LinkedIn</a>
+            <a class="button button-ghost" href="https://github.com/LandaburoSantiago" target="_blank"
+              rel="noreferrer noopener">GitHub</a>
+          </div>
+        </div>
+        <aside class="hero-panel reveal">
+          <p class="panel-label" data-i18n="hero.prioritiesLabel">Execution Priorities</p>
+          <ul>
+            <li>
+              <span data-i18n="hero.priority1Title">Execution Speed</span>
+              <p data-i18n="hero.priority1Text">Reduce time to market while keeping architecture maintainable.</p>
+            </li>
+            <li>
+              <span data-i18n="hero.priority2Title">End-to-End Execution</span>
+              <p data-i18n="hero.priority2Text">Execute implementation end-to-end and contribute with consistency across delivery.</p>
+            </li>
+            <li>
+              <span data-i18n="hero.priority3Title">Business Alignment</span>
+              <p data-i18n="hero.priority3Text">Translate product goals into practical and scalable systems.</p>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-	<!-- Award & Achievements -->
-	<div class="award section second" id="achievements">
-		<div class="container">
-			<h1>Award &amp;<br>Achievements</h1>
-			<ul class="award-list list-flat"></ul>
-				<li>September 2024</li>
-				<li>I graduated with a Bachelor's degree in Information Systems.</li>				
-			</ul>
-			<ul class="award-list list-flat">
-				<li>January 2024</li>
-				<li>I completed the Design Patterns course.</li>				
-			</ul>
-			<ul class="award-list list-flat">
-				<li>March 2023</li>
-				<li>I completed the React PRO course.</li>				
-			</ul>
-			<ul class="award-list list-flat">
-				<li>May 2022</li>
-				<li>I obtained the title of Information Systems Analyst.</li>				
-			</ul>			
-		</div>
-	</div>
+    <section class="section" id="about">
+      <div class="container reveal">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+          <h3 data-i18n="about.title">Engineering with product context and execution discipline.</h3>
+        </div>
+        <div class="about-layout">
+          <p data-i18n="about.p1">
+            I build software for teams creating and evolving digital products. My approach combines technical depth with
+            business awareness, allowing me to contribute beyond implementation: defining solutions, improving
+            workflows, and keeping priorities aligned with measurable outcomes.
+          </p>
+          <p data-i18n="about.p2">
+            Across different product environments, I have worked from analysis to production deployment, adapted to
+            evolving stacks and team structures, and supported growth by onboarding developers and reinforcing
+            ownership standards that improve delivery speed without compromising quality.
+          </p>
+        </div>
+      </div>
+    </section>
 
-	<!-- Projects -->
-	<div class="award section second" id="achievements">
-		<div class="container">
-			<h1>Projects</h1>
-			<ul class="award-list list-flat">
-				<li>Simple express api to manage users</li>
-				<li>
-					This API provides simple user management capabilities coupled with authentication functionalities. 
-					It has endpoints designed for user creation, deletion, updating, and retrieval.
-				</li>
-				<br>		
-				<li>
-					<b>Github repository:</b> <a target="_blank" href="https://github.com/LandaburoSantiago/express_api_users">https://github.com/LandaburoSantiago/express_api_users</a>
-				</li>	
-				<li>
-				<b>Url to try it:</b> <a target="_blank" href="https://express-api-users-6ux8.onrender.com/">https://express-api-users-6ux8.onrender.com/</a>
-				</li>	
-				<li>
-					<b>Skills: </b> Node.JS ; Express ; Typescript ; PostgreSQL ; Docker ; Postman ; Git.
-				</li>	
-			</ul>
-			<ul class="award-list list-flat">
-				<li>FunkoPop Store</li>
-				<li>FunkoPop Store is an ecommerce to comercialize Funkopops in Concepción del Uruguay.</li>	
-				<br>
-				<li>This app has authentication and access for clients and administrators. The clients can view the products and realize all proccess of buy and the administrator is in charge of manage products, shipments, view and attend comments etc.</li>				
-				<br>
-				<li>
-					<b>Url to try it:</b> <a target="_blank" href="https://funko-pop-store-frontend.vercel.app/">https://funko-pop-store-frontend.vercel.app/</a>
-				</li>
-				<br>
-				<li>
-					<b>Skills: </b> React ; Nest JS ; Node.JS ; Typescript ; PostgreSQL ; Mercado Pago ; Git ; Project Managment ; Software Design ; Leadership.
-				</li>	
-			</ul>			
-			<ul class="award-list list-flat">
-				<li>Simple web scraping</li>
-				<li>This is a script that realize a web scraping of the accomodations offered to tourism in the Gualeguaychú's city. The purpose is have the accomodations data more ordered and accesible for an investigación.</li>	
-				<br>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="projects.eyebrow">Featured Projects</span>
+          <h3 data-i18n="projects.title">Selected work focused on digital products and scalable systems.</h3>
+        </div>
 
-				<li>
-					<b>Github repository:</b> <a target="_blank" href="https://github.com/LandaburoSantiago/simple-web-scraping">https://github.com/LandaburoSantiago/simple-web-scraping</a>
-				</li>	
-				<br>
-				<li>
-					<b>Skills: </b> Python.
-				</li>
-			</ul>	
-		</div>
-	</div>
+        <article class="project-card project-featured reveal">
+          <div class="project-copy">
+            <span class="project-tag" data-i18n="projects.ecomdrop.tag">Main Project</span>
+            <h4>ECOMDROP</h4>
+            <div class="project-info-row">
+              <span class="project-info-chip" data-i18n="projects.ecomdrop.company">Bombieri</span>
+              <span class="project-info-chip" data-i18n="projects.ecomdrop.date">feb 2024 - jun 2025</span>
+            </div>
+            <p class="project-subtitle" data-i18n="projects.ecomdrop.subtitle">PWA dropshipping platform for the
+              Argentine market.</p>
+            <p data-i18n="projects.ecomdrop.p1">
+              Contributed from early analysis and solution design to full implementation. Added functional and
+              business-oriented ideas to support product adoption, while structuring the codebase for scalability and
+              long-term maintainability.
+            </p>
+            <p data-i18n="projects.ecomdrop.p2">
+              As the project grew, helped onboard new developers and reinforced delivery practices that enabled team
+              expansion without losing execution speed.
+            </p>
+            <ul class="impact-list">
+              <li data-i18n="projects.ecomdrop.impact1">Product management flows designed for fast catalog operations.
+              </li>
+              <li data-i18n="projects.ecomdrop.impact2">Order and logistics workflows optimized for operational clarity.
+              </li>
+              <li data-i18n="projects.ecomdrop.impact3">Mobile-first PWA experience aligned with daily merchant usage.
+              </li>
+            </ul>
+            <div class="tech-tags">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Node.js</span>
+              <span>NestJS</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+            </div>
+          </div>
+          <div class="project-visual ecomdrop-visual" aria-hidden="true">
+            <div class="mock-window">
+              <div class="window-head">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="window-body">
+                <div class="chart-block"></div>
+                <div class="row-block">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="table-block">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="mock-mobile">
+              <div class="mobile-head"></div>
+              <div class="mobile-card"></div>
+              <div class="mobile-list"></div>
+            </div>
+          </div>
+        </article>
 
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-copy">
+              <h4>PADI</h4>
+              <div class="project-info-row">
+                <span class="project-info-chip" data-i18n="projects.padi.company">Bombieri</span>
+                <span class="project-info-chip" data-i18n="projects.padi.date">Jul 2025 - Current</span>
+              </div>
+              <p class="project-subtitle" data-i18n="projects.padi.subtitle">Omnichannel banking assistant.</p>
+              <p data-i18n="projects.padi.p1">
+                Worked on a platform requiring adaptability, cloud-based integrations, and collaboration with enterprise
+                systems. The focus was evolving an existing solution while preserving reliability and supporting
+                operational continuity.
+              </p>
+              <ul class="impact-list">
+                <li data-i18n="projects.padi.impact1">Complex integrations across banking and conversational channels.
+                </li>
+                <li data-i18n="projects.padi.impact2">Cloud-oriented architecture decisions in IBM environments.</li>
+                <li data-i18n="projects.padi.impact3">Continuous evolution of a live enterprise platform.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Java Spring Boot</span>
+                <span>Node.js</span>
+                <span>Watson Assistant</span>
+                <span>IBM Cloud</span>
+              </div>
+            </div>
+            <div class="project-visual padi-visual" aria-hidden="true">
+              <div class="chat-line"></div>
+              <div class="chat-line short"></div>
+              <div class="integration-map">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
 
-	<!-- Technical Skills -->
-	<div class="skills section second" id="skills">
-		<div class="container">
-			<h1>Technical<br>Skills</h1>
-			<ul class="skill-list list-flat">
-				<li>Programming Languages</li>
-				<li> Javascript / Python / C# </li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Web Technology</li>
-				<li>HTML / CSS / Node.js / PHP</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Database</li>
-				<li>Postgre SQL / MySQL / MongoDB / Redis</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Frameworks</li>
-				<li>React / Nest JS / Flask </li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Tools</li>
-				<li>Docker / Git </li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Architecture and Web Services Development</li>
-				<li>API Rest / Graph QL / Microservices / Firebase</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>And learning more</li>
-				<li>...</li>
-			</ul>
-			
-		</div>
-	</div>
+          <article class="project-card reveal">
+            <div class="project-copy">
+              <h4>XUBIO MOBILE</h4>
+              <div class="project-info-row">
+                <span class="project-info-chip" data-i18n="projects.xubio.company">Bombieri</span>
+                <span class="project-info-chip" data-i18n="projects.xubio.date">Dec 2023 - Sep 2024</span>
+              </div>
+              <p class="project-subtitle" data-i18n="projects.xubio.subtitle">Maintenance and evolution of a production
+                mobile application.</p>
+              <p data-i18n="projects.xubio.p1">
+                Maintained and extended an Angular/Ionic mobile product, adapting quickly to existing code and release
+                constraints, while ensuring reliable delivery to App Store and Play Store environments.
+              </p>
+              <ul class="impact-list">
+                <li data-i18n="projects.xubio.impact1">Feature evolution on a live mobile codebase.</li>
+                <li data-i18n="projects.xubio.impact2">Cross-platform deployment and release support.</li>
+                <li data-i18n="projects.xubio.impact3">Adaptability across frameworks and product domains.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Angular</span>
+                <span>Ionic</span>
+              </div>
+            </div>
+            <div class="project-visual xubio-visual" aria-hidden="true">
+              <div class="phone-frame">
+                <div class="phone-screen"></div>
+              </div>
+              <div class="store-badges">
+                <span>App Store</span>
+                <span>Play Store</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-	
-		<div class="container" >
-			<a target="_blank" href="./assets/cvEN.pdf">Download english CV</a>
-			<br/>
-			<a target="_blank" href="./assets/cvES.pdf">Download spanish CV</a>
-		</div>
-	
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="experience.eyebrow">Experience</span>
+          <h3 data-i18n="experience.title">Building outcomes in product and engineering teams.</h3>
+        </div>
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <div class="timeline-point" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-role" data-i18n="experience.bombieri.role">Full Stack Software Engineer</p>
+              <h4>Bombieri</h4>
+              <p data-i18n="experience.bombieri.text">
+                Product development with full-stack ownership, architecture decisions, and technical initiatives that
+                improved scalability and delivery confidence.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-point" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-role" data-i18n="experience.rebrit.role">Front-End Developer</p>
+              <h4>Rebrit SRL</h4>
+              <p data-i18n="experience.rebrit.text">
+                Contributed to business-facing software solutions, adapting across projects and technologies while
+                maintaining quality standards and supporting team collaboration.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-	<footer>
-		<div class="container">
-			<div class="units-row">
-			    <div class="unit-100" style="display: flex; align-items: center; justify-content: center; gap: 4px" >
-			    	<span class="en d-none">With</span> <i style="font-size: 15px; color:rgb(238, 73, 73)" class="material-icons">favorite</i>
-					Santiago Landaburo | <span id="year"></span>
-			    </div>
-				<br>
-			    <div class="unit-100" style="display: flex; justify-content: center; align-items: center;">
-					<div style="display: flex; width: 100%; justify-content: space-around;">
-						<a target="_blank" href="mailto:santiagomartinlandaburo@gmail.com"><i class="fa fa-send"></i></a>
-						<a target="_blank" href="https://www.linkedin.com/in/santiago-martin-landaburo-322ab71b6/"><i class="fa fa-linkedin"></i></a>
-						<a target="_blank" href="https://github.com/LandaburoSantiago"><i class="fa fa-github"></i></a>
-					</div>
-			    </div>
-			</div>
-		</div>
-	</footer>
+    <section class="section" id="personal-projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="personalProjects.eyebrow">Personal Projects</span>
+          <h3 data-i18n="personalProjects.title">Personal Projects</h3>
+          <p data-i18n="personalProjects.intro">
+            Personal projects focused on solving real-world problems, exploring product ideas, and experimenting with
+            new domains and technologies.
+          </p>
+        </div>
 
-	<!-- Javascript -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/typed.min.js"></script>
-    <script src="js/kube.min.js"></script>
-    <script src="js/site.js"></script>
-    <script>
-		function newTyped(){}$(function(){$("#typed").typed({
-		// Change to edit type effect
-		strings: ["full stack developer", "passionate", "persistent", ],
+        <article class="project-card personal-project-card personal-featured-card reveal">
+          <div class="project-copy">
+            <div class="project-meta-row">
+              <span class="project-tag" data-i18n="personalProjects.ranching.tag">Featured Personal Build</span>
+              <span class="status-badge status-active" data-i18n="personalProjects.ranching.status">Currently under
+                active development</span>
+            </div>
+            <h4>Regenerative Ranching Manager</h4>
+            <p class="project-subtitle" data-i18n="personalProjects.ranching.subtitle">A visual operational management
+              platform for regenerative grazing systems.</p>
+            <p data-i18n="personalProjects.ranching.p1">
+              Built around a map-centered workflow, the platform helps producers coordinate paddocks, livestock
+              movements, grazing events, and rest periods from a single operational view designed for daily
+              decision-making.
+            </p>
+            <ul class="impact-list">
+              <li data-i18n="personalProjects.ranching.impact1">Geospatial workflows built for traceable paddock and
+                herd operations.</li>
+              <li data-i18n="personalProjects.ranching.impact2">Operational records and grazing events structured for
+                execution in the field.</li>
+              <li data-i18n="personalProjects.ranching.impact3">Architecture shaped for product evolution across agtech
+                management needs.</li>
+            </ul>
 
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
-    </script>
-	<script>
-        const year = new Date().getFullYear();
-        document.getElementById("year").innerHTML = year;
-    </script> 
-	<script>
-		let birthday = "12/11/1998"
-		birthday=new Date(birthday.split('/').reverse().join('-'));
-    	var ageDifMs = Date.now() - birthday.getTime();
-    	var ageDate = new Date(ageDifMs); 
-    	const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+            <div class="stack-panel">
+              <div class="stack-panel-group">
+                <p class="stack-panel-label" data-i18n="personalProjects.labels.frontend">Frontend</p>
+                <div class="tech-tags">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>MapLibre GL</span>
+                </div>
+              </div>
+              <div class="stack-panel-group">
+                <p class="stack-panel-label" data-i18n="personalProjects.labels.backend">Backend</p>
+                <div class="tech-tags">
+                  <span>NestJS</span>
+                  <span>PostgreSQL</span>
+                  <span>Prisma ORM</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-		document.getElementById("age").innerHTML = age
+          <div class="project-visual personal-visual ranching-visual" aria-hidden="true">
+            <div class="ranching-canvas">
+              <div class="ranching-topbar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="ranching-map">
+                <div class="paddock-shape paddock-a"></div>
+                <div class="paddock-shape paddock-b"></div>
+                <div class="paddock-shape paddock-c"></div>
+                <div class="movement-path"></div>
+                <div class="map-panel">
+                  <div class="map-panel-title"></div>
+                  <div class="map-panel-line wide"></div>
+                  <div class="map-panel-line"></div>
+                  <div class="map-panel-line short"></div>
+                </div>
+                <div class="map-stats">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
 
-	</script>
+        <div class="personal-projects-grid">
+          <article class="project-card personal-project-card reveal">
+            <div class="project-copy personal-card-layout">
+              <div class="project-meta-row">
+                <span class="status-badge status-live" data-i18n="personalProjects.canoe.status">Actively used in
+                  training</span>
+              </div>
+              <h4>Canoe Stroke Counter</h4>
+              <p class="project-subtitle" data-i18n="personalProjects.canoe.subtitle">A mobile-first PWA designed to
+                help canoe coaches track athlete stroke rate during training sessions.</p>
+              <p data-i18n="personalProjects.canoe.p1">
+                Designed as a lightweight field tool, it gives coaches a fast way to measure stroke rate without
+                interrupting observation, timing, or session flow.
+              </p>
+              <ul class="impact-list">
+                <li data-i18n="personalProjects.canoe.impact1">Still used today by coaches during live training
+                  sessions.</li>
+                <li data-i18n="personalProjects.canoe.impact2">Mobile-first interaction optimized for quick use on the
+                  water side.</li>
+                <li data-i18n="personalProjects.canoe.impact3">PWA delivery keeps the product installable, fast, and
+                  frictionless.</li>
+              </ul>
+              <div class="stack-panel-group">
+                <p class="stack-panel-label" data-i18n="personalProjects.labels.stack">Stack</p>
+                <div class="tech-tags">
+                  <span>Next</span>
+                  <span>TypeScript</span>
+                  <span>PWA</span>
+                </div>
+              </div>
+              <div class="project-link-group">
+                <a class="button button-ghost" href="http://cuentapaladas.vercel.app" target="_blank" rel="noreferrer"
+                  data-i18n="personalProjects.canoe.link">Visit site</a>
+              </div>
+            </div>
+
+            <div class="project-visual personal-visual canoe-visual" aria-hidden="true">
+              <div class="canoe-device">
+                <div class="canoe-notch"></div>
+                <div class="canoe-screen">
+                  <div class="canoe-stat"></div>
+                  <div class="canoe-rate"></div>
+                  <div class="canoe-timeline"></div>
+                  <div class="canoe-actions">
+                    <span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-chip"></div>
+            </div>
+          </article>
+
+          <article class="project-card personal-project-card reveal">
+            <div class="project-copy personal-card-layout">
+              <div class="project-meta-row">
+                <span class="status-badge status-foundation" data-i18n="personalProjects.print.status">Early end-to-end
+                  build</span>
+              </div>
+              <h4>Print Cost Comparator</h4>
+              <p class="project-subtitle" data-i18n="personalProjects.print.subtitle">A web application designed to
+                compare printing costs across different copy shops based on uploaded PDF documents.</p>
+              <p data-i18n="personalProjects.print.p1">
+                One of the first end-to-end products I built, created around a simple but real user problem:
+                understanding print costs before committing to a provider.
+              </p>
+              <ul class="impact-list">
+                <li data-i18n="personalProjects.print.impact1">Turned a local pain point into a usable product concept.
+                </li>
+                <li data-i18n="personalProjects.print.impact2">Covered the full flow from document upload to price
+                  comparison.</li>
+                <li data-i18n="personalProjects.print.impact3">A foundational project for product thinking, scope
+                  decisions, and delivery ownership.</li>
+              </ul>
+              <div class="stack-panel-group">
+                <p class="stack-panel-label" data-i18n="personalProjects.labels.stack">Stack</p>
+                <div class="tech-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Python Flask</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-visual personal-visual print-visual" aria-hidden="true">
+              <div class="upload-card"></div>
+              <div class="comparison-card">
+                <span class="comparison-row best"></span>
+                <span class="comparison-row"></span>
+                <span class="comparison-row"></span>
+                <span class="comparison-row short"></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="stack.eyebrow">Tech Stack</span>
+          <h3 data-i18n="stack.title">Tools selected for product velocity and sustainable growth.</h3>
+        </div>
+        <div class="stack-grid reveal">
+          <article>
+            <h4 data-i18n="stack.frontend.title">Frontend</h4>
+            <p>React, TypeScript, Angular, HTML, CSS</p>
+          </article>
+          <article>
+            <h4 data-i18n="stack.backend.title">Backend</h4>
+            <p>Node.js, NestJS, Java Spring Boot</p>
+          </article>
+          <article>
+            <h4 data-i18n="stack.cloud.title">Cloud &amp; DevOps</h4>
+            <p data-i18n="stack.cloud.text">Docker, IBM Cloud, CI/CD workflows</p>
+          </article>
+          <article>
+            <h4 data-i18n="stack.databases.title">Databases</h4>
+            <p data-i18n="stack.databases.text">PostgreSQL, relational data modeling</p>
+          </article>
+          <article>
+            <h4 data-i18n="stack.mobile.title">Mobile</h4>
+            <p data-i18n="stack.mobile.text">Ionic, PWA delivery, Store publishing</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container reveal">
+        <div class="contact-card">
+          <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+          <h3 data-i18n="contact.title">Open to product-driven opportunities and collaborations.</h3>
+          <p data-i18n="contact.text">
+            If you are building, evolving, or scaling a digital product, I would be glad to connect and discuss how to
+            move faster with solid technical execution.
+          </p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/santiago-martin-landaburo" target="_blank" rel="noreferrer noopener"
+              data-i18n="contact.linkedin">LinkedIn</a>
+            <a href="https://github.com/LandaburoSantiago" target="_blank" rel="noreferrer noopener"
+              data-i18n="contact.github">GitHub</a>
+            <a href="mailto:santiagomartinlandaburo@gmail.com">santiagomartinlandaburo@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-cv-download">
+        <span data-i18n="cvDownload.text">Use the current language selector to download the Spanish or English PDF version.</span>
+        <a href="./cvEn.pdf" download="Santiago-Martin-Landaburo-CV-en.pdf" data-cv-download
+          data-i18n="cvDownload.button">Download CV</a>
+      </div>
+      <p>&copy; <span id="current-year"></span> <span data-i18n="footer.text">Santiago Martin Landaburo</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

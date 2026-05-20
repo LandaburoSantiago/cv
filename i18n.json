@@ -1,0 +1,314 @@
+{
+  "en": {
+    "meta": {
+      "title": "Santiago Martin Landaburo | Full Stack Software Engineer",
+      "description": "Portfolio of Santiago Martin Landaburo, Full Stack Software Engineer focused on digital products, scalable systems, and business-oriented software solutions."
+    },
+    "nav": {
+      "aria": "Main navigation",
+      "about": "About",
+      "projects": "Projects",
+      "personalProjects": "Personal Projects",
+      "experience": "Experience",
+      "stack": "Stack",
+      "contact": "Contact"
+    },
+    "language": {
+      "selector": "Language selector"
+    },
+    "hero": {
+      "eyebrow": "Digital Product Engineering",
+      "title": "Full Stack Software Engineer",
+      "intro": "Building digital products with a business-oriented mindset.",
+      "detail": "I build digital products end-to-end, combining technical execution, product thinking, and business context from analysis and solution design to deployment and iteration.",
+      "ctaProjects": "View Projects",
+      "ctaContact": "Contact Me",
+      "prioritiesLabel": "Execution Priorities",
+      "priority1Title": "Execution Speed",
+      "priority1Text": "Reduce time to market while keeping architecture maintainable.",
+      "priority2Title": "End-to-End Execution",
+      "priority2Text": "Execute implementation end-to-end and contribute with consistency across delivery.",
+      "priority3Title": "Business Alignment",
+      "priority3Text": "Translate product goals into practical and scalable systems."
+    },
+    "about": {
+      "eyebrow": "About",
+      "title": "Engineering with product context and execution discipline.",
+      "p1": "I build software for teams creating and evolving digital products. My approach combines technical depth with business awareness, allowing me to contribute beyond implementation: defining solutions, improving workflows, and keeping priorities aligned with measurable outcomes.",
+      "p2": "Across different product environments, I have worked from analysis to production deployment, adapted to evolving stacks and team structures, and supported growth by onboarding developers and reinforcing ownership standards that improve delivery speed without compromising quality."
+    },
+    "projects": {
+      "eyebrow": "Featured Projects",
+      "title": "Selected work focused on digital products and scalable systems.",
+      "ecomdrop": {
+        "tag": "Main Project",
+        "company": "Bombieri",
+        "date": "feb 2024 - jun 2025",
+        "subtitle": "PWA dropshipping platform for the Argentine market.",
+        "p1": "Contributed from early analysis and solution design to full implementation. Added functional and business-oriented ideas to support product adoption, while structuring the codebase for scalability and long-term maintainability.",
+        "p2": "As the project grew, helped onboard new developers and reinforced delivery practices that enabled team expansion without losing execution speed.",
+        "impact1": "Product management flows designed for fast catalog operations.",
+        "impact2": "Order and logistics workflows optimized for operational clarity.",
+        "impact3": "Mobile-first PWA experience aligned with daily merchant usage."
+      },
+      "padi": {
+        "company": "Bombieri",
+        "date": "Jul 2025 - Current",
+        "subtitle": "Omnichannel banking assistant.",
+        "p1": "Worked on a platform requiring adaptability, cloud-based integrations, and collaboration with enterprise systems. The focus was evolving an existing solution while preserving reliability and supporting operational continuity.",
+        "impact1": "Complex integrations across banking and conversational channels.",
+        "impact2": "Cloud-oriented architecture decisions in IBM environments.",
+        "impact3": "Continuous evolution of a live enterprise platform."
+      },
+      "xubio": {
+        "company": "Bombieri",
+        "date": "Dec 2023 - Sep 2024",
+        "subtitle": "Maintenance and evolution of a production mobile application.",
+        "p1": "Maintained and extended an Angular/Ionic mobile product, adapting quickly to existing code and release constraints, while ensuring reliable delivery to App Store and Play Store environments.",
+        "impact1": "Feature evolution on a live mobile codebase.",
+        "impact2": "Cross-platform deployment and release support.",
+        "impact3": "Adaptability across frameworks and product domains."
+      }
+    },
+    "personalProjects": {
+      "eyebrow": "Personal Projects",
+      "title": "Personal Projects",
+      "intro": "Personal projects focused on solving real-world problems, exploring product ideas, and experimenting with new domains and technologies.",
+      "labels": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "stack": "Stack"
+      },
+      "ranching": {
+        "tag": "Featured Personal Build",
+        "status": "Currently under active development",
+        "subtitle": "A visual operational management platform for regenerative grazing systems.",
+        "p1": "Built around a map-centered workflow, the platform helps producers coordinate paddocks, livestock movements, grazing events, and rest periods from a single operational view designed for daily decision-making.",
+        "impact1": "Geospatial workflows built for traceable paddock and herd operations.",
+        "impact2": "Operational records and grazing events structured for execution in the field.",
+        "impact3": "Architecture shaped for product evolution across agtech management needs."
+      },
+      "canoe": {
+        "status": "Actively used in training",
+        "link": "Visit site",
+        "subtitle": "A mobile-first PWA designed to help canoe coaches track athlete stroke rate during training sessions.",
+        "p1": "Designed as a lightweight field tool, it gives coaches a fast way to measure stroke rate without interrupting observation, timing, or session flow.",
+        "impact1": "Still used today by coaches during live training sessions.",
+        "impact2": "Mobile-first interaction optimized for quick use on the water side.",
+        "impact3": "PWA delivery keeps the product installable, fast, and frictionless."
+      },
+      "print": {
+        "status": "Early end-to-end build",
+        "subtitle": "A web application designed to compare printing costs across different copy shops based on uploaded PDF documents.",
+        "p1": "One of the first end-to-end products I built, created around a simple but real user problem: understanding print costs before committing to a provider.",
+        "impact1": "Turned a local pain point into a usable product concept.",
+        "impact2": "Covered the full flow from document upload to price comparison.",
+        "impact3": "A foundational project for product thinking, scope decisions, and delivery ownership."
+      }
+    },
+    "experience": {
+      "eyebrow": "Experience",
+      "title": "Building outcomes in product and engineering teams.",
+      "bombieri": {
+        "role": "Full Stack Software Engineer",
+        "text": "Product development with full-stack ownership, architecture decisions, and technical initiatives that improved scalability and delivery confidence."
+      },
+      "rebrit": {
+        "role": "Front-End Developer",
+        "text": "Contributed to business-facing software solutions, adapting across projects and technologies while maintaining quality standards and supporting team collaboration."
+      }
+    },
+    "stack": {
+      "eyebrow": "Tech Stack",
+      "title": "Tools selected for product velocity and sustainable growth.",
+      "frontend": {
+        "title": "Frontend"
+      },
+      "backend": {
+        "title": "Backend"
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "text": "Docker, IBM Cloud, CI/CD workflows"
+      },
+      "databases": {
+        "title": "Databases",
+        "text": "PostgreSQL, relational data modeling"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "text": "Ionic, PWA delivery, Store publishing"
+      }
+    },
+    "cvDownload": {
+      "text": "Download the resume in the selected language.",
+      "button": "Download Resume"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Open to product-driven opportunities and collaborations.",
+      "text": "If you are building, evolving, or scaling a digital product, I would be glad to connect and discuss how to move faster with solid technical execution.",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "footer": {
+      "text": "Santiago Martin Landaburo."
+    }
+  },
+  "es": {
+    "meta": {
+      "title": "Santiago Martin Landaburo | Full Stack Software Engineer",
+      "description": "Portfolio de Santiago Martin Landaburo, Full Stack Software Engineer enfocado en productos digitales, sistemas escalables y soluciones orientadas al negocio."
+    },
+    "nav": {
+      "aria": "Navegación principal",
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "personalProjects": "Proyectos personales",
+      "experience": "Experiencia",
+      "stack": "Stack",
+      "contact": "Contacto"
+    },
+    "language": {
+      "selector": "Selector de idioma"
+    },
+    "hero": {
+      "eyebrow": "Ingeniería de productos digitales",
+      "title": "Full Stack Software Engineer",
+      "intro": "Construyendo productos digitales con una mentalidad orientada al negocio.",
+      "detail": "Construyo productos digitales de punta a punta, combinando ejecución técnica, visión de producto y contexto de negocio desde el análisis y el diseño de soluciones hasta el despliegue y la iteración.",
+      "ctaProjects": "Ver proyectos",
+      "ctaContact": "Contactarme",
+      "prioritiesLabel": "Prioridades de ejecución",
+      "priority1Title": "Velocidad de ejecución",
+      "priority1Text": "Reducir el time-to-market manteniendo una arquitectura sostenible.",
+      "priority2Title": "Ejecución end-to-end",
+      "priority2Text": "Ejecutar la implementación de punta a punta y aportar consistencia a lo largo de la entrega.",
+      "priority3Title": "Alineación con negocio",
+      "priority3Text": "Traducir objetivos de producto en sistemas prácticos y escalables."
+    },
+    "about": {
+      "eyebrow": "Sobre mí",
+      "title": "Ingeniería con contexto de producto y disciplina de ejecución.",
+      "p1": "Construyo software para equipos que crean y evolucionan productos digitales. Mi enfoque combina profundidad técnica con visión de negocio, lo que me permite aportar más allá de la implementación: definir soluciones, mejorar procesos y mantener prioridades alineadas con resultados medibles.",
+      "p2": "En distintos entornos de producto, trabajé desde el análisis hasta despliegues en producción, me adapté a stacks y estructuras de equipo en evolución, y acompañé el crecimiento incorporando desarrolladores y reforzando estándares de responsabilidad que mejoran la velocidad sin comprometer calidad."
+    },
+    "projects": {
+      "eyebrow": "Proyectos destacados",
+      "title": "Trabajo seleccionado con foco en productos digitales y sistemas escalables.",
+      "ecomdrop": {
+        "tag": "Proyecto principal",
+        "company": "Bombieri",
+        "date": "feb 2024 - jun 2025",
+        "subtitle": "Plataforma PWA de dropshipping para el mercado argentino.",
+        "p1": "Participé desde el análisis inicial y el diseño de soluciones hasta la implementación completa. Sumé ideas funcionales y de negocio para impulsar la adopción del producto, mientras estructuraba la base de código para escalar y mantener en el largo plazo.",
+        "p2": "A medida que el proyecto creció, apoyé la incorporación de nuevos desarrolladores y consolidé prácticas de entrega que permitieron expandir el equipo sin perder velocidad de ejecución.",
+        "impact1": "Flujos de gestión de productos pensados para operar catálogos con rapidez.",
+        "impact2": "Flujos de órdenes y logística optimizados para mayor claridad operativa.",
+        "impact3": "Experiencia PWA mobile-first alineada al uso diario de los comercios."
+      },
+      "padi": {
+        "company": "Bombieri",
+        "date": "jul 2025 - Actualidad",
+        "subtitle": "Asistente bancario omnicanal.",
+        "p1": "Trabajé sobre una plataforma que exigía adaptabilidad, integraciones en la nube y colaboración con sistemas empresariales. El foco fue evolucionar una solución existente manteniendo confiabilidad y continuidad operativa.",
+        "impact1": "Integraciones complejas entre canales bancarios y conversacionales.",
+        "impact2": "Decisiones de arquitectura orientadas a la nube en entornos IBM.",
+        "impact3": "Evolución continua de una plataforma empresarial en producción."
+      },
+      "xubio": {
+        "company": "Bombieri",
+        "date": "dic 2023 - sep 2024",
+        "subtitle": "Mantenimiento y evolución de una aplicación móvil en producción.",
+        "p1": "Mantuve y evolucioné un producto móvil con Angular/Ionic, adaptándome rápidamente al código existente y a restricciones de lanzamiento, asegurando entregas confiables para App Store y Play Store.",
+        "impact1": "Evolución de funcionalidades sobre una base móvil en producción.",
+        "impact2": "Soporte de despliegues y lanzamientos multiplataforma.",
+        "impact3": "Adaptabilidad entre frameworks y dominios de producto."
+      }
+    },
+    "personalProjects": {
+      "eyebrow": "Proyectos personales",
+      "title": "Proyectos personales",
+      "intro": "Proyectos personales enfocados en resolver problemas reales, explorar ideas de producto y experimentar con nuevos dominios y tecnologías.",
+      "labels": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "stack": "Stack"
+      },
+      "ranching": {
+        "tag": "Proyecto personal destacado",
+        "status": "Actualmente en desarrollo activo",
+        "subtitle": "Una plataforma visual de gestión operativa para sistemas de pastoreo regenerativo.",
+        "p1": "Construida sobre un flujo centrado en mapas, la plataforma ayuda a productores a coordinar potreros, movimientos de ganado, eventos de pastoreo y períodos de descanso desde una vista operativa pensada para la toma de decisiones diaria.",
+        "impact1": "Flujos geoespaciales pensados para operaciones trazables de potreros y rodeo.",
+        "impact2": "Registros operativos y eventos de pastoreo estructurados para la ejecución en campo.",
+        "impact3": "Arquitectura pensada para la evolución del producto en necesidades de gestión agtech."
+      },
+      "canoe": {
+        "status": "Uso activo en entrenamiento",
+        "link": "Visitar sitio",
+        "subtitle": "Una PWA mobile-first diseñada para ayudar a entrenadores de canotaje a medir la frecuencia de paladas durante sesiones de entrenamiento.",
+        "p1": "Diseñada como una herramienta liviana de campo, le da al entrenador una forma rápida de medir la frecuencia de paladas sin interrumpir la observación, el cronometraje ni el flujo de la sesión.",
+        "impact1": "Sigue siendo utilizada hoy por entrenadores en sesiones reales.",
+        "impact2": "Interacción mobile-first optimizada para uso rápido al borde del agua.",
+        "impact3": "La entrega como PWA mantiene el producto instalable, rápido y sin fricción."
+      },
+      "print": {
+        "status": "Primer producto end-to-end",
+        "subtitle": "Una aplicación web diseñada para comparar costos de impresión entre distintas copisterías a partir de archivos PDF subidos por el usuario.",
+        "p1": "Uno de los primeros productos end-to-end que construí, creado alrededor de un problema simple pero real: entender el costo de impresión antes de elegir un proveedor.",
+        "impact1": "Convirtió un problema cotidiano en un concepto de producto útil.",
+        "impact2": "Cubrió el flujo completo desde la carga del documento hasta la comparación de precios.",
+        "impact3": "Un proyecto fundacional para visión de producto, decisiones de alcance y responsabilidad de entrega."
+      }
+    },
+    "experience": {
+      "eyebrow": "Experiencia",
+      "title": "Construyendo resultados en equipos de producto e ingeniería.",
+      "bombieri": {
+        "role": "Full Stack Software Engineer",
+        "text": "Desarrollo de producto con responsabilidad full stack, decisiones de arquitectura e iniciativas técnicas que mejoraron escalabilidad y confianza de entrega."
+      },
+      "rebrit": {
+        "role": "Desarrollador Front-End",
+        "text": "Contribución en soluciones de software orientadas al negocio, adaptándome a distintos proyectos y tecnologías mientras mantenía estándares de calidad y colaboración de equipo."
+      }
+    },
+    "stack": {
+      "eyebrow": "Stack tecnológico",
+      "title": "Herramientas elegidas para velocidad de producto y crecimiento sostenible.",
+      "frontend": {
+        "title": "Frontend"
+      },
+      "backend": {
+        "title": "Backend"
+      },
+      "cloud": {
+        "title": "Cloud y DevOps",
+        "text": "Docker, IBM Cloud y flujos de CI/CD"
+      },
+      "databases": {
+        "title": "Bases de datos",
+        "text": "PostgreSQL, modelado relacional"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "text": "Ionic, entrega PWA y publicación en tiendas"
+      }
+    },
+    "cvDownload": {
+      "text": "Descargá el CV en el idioma seleccionado.",
+      "button": "Descargar CV"
+    },
+    "contact": {
+      "eyebrow": "Contacto",
+      "title": "Disponible para oportunidades y colaboraciones orientadas a producto.",
+      "text": "Si estás construyendo, evolucionando o escalando un producto digital, me encantaría conectar para conversar sobre cómo avanzar más rápido con ejecución técnica sólida.",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "footer": {
+      "text": "Santiago Martin Landaburo."
+    }
+  }
+}
