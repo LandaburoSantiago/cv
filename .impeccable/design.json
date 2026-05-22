@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-22T00:00:00.000Z",
+  "title": "Design System: Santiago Martin Landaburo Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(97% 0.012 82)",
+        "tonalRamp": [
+          "oklch(15% 0.012 82)",
+          "oklch(26% 0.012 82)",
+          "oklch(37% 0.012 82)",
+          "oklch(48% 0.012 82)",
+          "oklch(59% 0.012 82)",
+          "oklch(70% 0.012 82)",
+          "oklch(83% 0.012 82)",
+          "oklch(95% 0.012 82)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(29% 0.022 252)",
+        "tonalRamp": [
+          "oklch(15% 0.022 252)",
+          "oklch(24% 0.022 252)",
+          "oklch(33% 0.022 252)",
+          "oklch(42% 0.022 252)",
+          "oklch(51% 0.022 252)",
+          "oklch(64% 0.022 252)",
+          "oklch(78% 0.022 252)",
+          "oklch(92% 0.022 252)"
+        ]
+      },
+      "terracotta-signal": {
+        "role": "primary",
+        "displayName": "Terracotta Signal",
+        "canonical": "oklch(64% 0.145 42)",
+        "tonalRamp": [
+          "oklch(15% 0.145 42)",
+          "oklch(23% 0.145 42)",
+          "oklch(31% 0.145 42)",
+          "oklch(40% 0.145 42)",
+          "oklch(52% 0.145 42)",
+          "oklch(64% 0.145 42)",
+          "oklch(79% 0.12 42)",
+          "oklch(92% 0.06 42)"
+        ]
+      },
+      "field-wash": {
+        "role": "secondary",
+        "displayName": "Field Wash",
+        "canonical": "oklch(86% 0.055 122)",
+        "tonalRamp": [
+          "oklch(15% 0.055 122)",
+          "oklch(25% 0.055 122)",
+          "oklch(35% 0.055 122)",
+          "oklch(47% 0.055 122)",
+          "oklch(59% 0.055 122)",
+          "oklch(71% 0.055 122)",
+          "oklch(83% 0.055 122)",
+          "oklch(95% 0.03 122)"
+        ]
+      },
+      "sky-soft": {
+        "role": "tertiary",
+        "displayName": "Sky Soft",
+        "canonical": "oklch(93% 0.028 235)",
+        "tonalRamp": [
+          "oklch(15% 0.028 235)",
+          "oklch(26% 0.028 235)",
+          "oklch(37% 0.028 235)",
+          "oklch(48% 0.028 235)",
+          "oklch(60% 0.028 235)",
+          "oklch(72% 0.028 235)",
+          "oklch(84% 0.028 235)",
+          "oklch(95% 0.018 235)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero declarations and major first-impression headlines."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section openers and major narrative pivots."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project names and local section titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Descriptive copy and dense reading blocks."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Metadata, section numbers, and compact UI labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-low",
+        "value": "0 12px 30px oklch(24% 0.02 248 / 0.06)",
+        "purpose": "Default support shadow for panels and cards."
+      },
+      {
+        "name": "ambient-mid",
+        "value": "0 24px 54px oklch(24% 0.02 248 / 0.1)",
+        "purpose": "Hover lift for more prominent cards."
+      },
+      {
+        "name": "action-lift",
+        "value": "0 16px 28px oklch(62% 0.12 42 / 0.18)",
+        "purpose": "Primary CTA lift only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "180ms ease",
+        "purpose": "Default interactive state transition."
+      },
+      {
+        "name": "ease-reveal",
+        "value": "700ms ease",
+        "purpose": "Scroll reveal and section entry timing."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "900px"
+      },
+      {
+        "name": "sm",
+        "value": "620px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main CTA with warm accent and slight lift.",
+      "html": "<button class=\"ds-btn-primary\">View Projects</button>",
+      "css": ".ds-btn-primary { background: var(--accent, oklch(64% 0.145 42)); color: oklch(22% 0.02 32); min-height: 46px; padding: 11px 16px; border: 1px solid transparent; border-radius: 999px; font: 700 0.93rem \"Manrope\", \"Segoe UI\", sans-serif; letter-spacing: 0.01em; box-shadow: 0 16px 28px oklch(62% 0.12 42 / 0.18); transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, color 180ms ease; } .ds-btn-primary:hover { background: oklch(60% 0.145 42); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid oklch(56% 0.128 38); outline-offset: 2px; background: oklch(60% 0.145 42); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet supporting action on a paper-toned surface.",
+      "html": "<button class=\"ds-btn-secondary\">Contact Me</button>",
+      "css": ".ds-btn-secondary { background: oklch(95% 0.018 82); color: oklch(29% 0.022 252); min-height: 46px; padding: 11px 16px; border: 1px solid oklch(74% 0.022 78); border-radius: 999px; font: 700 0.93rem \"Manrope\", \"Segoe UI\", sans-serif; letter-spacing: 0.01em; transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease; } .ds-btn-secondary:hover { background: oklch(93% 0.022 82); border-color: oklch(66% 0.03 68); transform: translateY(-1px); } .ds-btn-secondary:focus-visible { outline: 2px solid oklch(56% 0.128 38); outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Low-pressure tertiary action with a tactile outline.",
+      "html": "<button class=\"ds-btn-ghost\">GitHub</button>",
+      "css": ".ds-btn-ghost { background: transparent; color: oklch(43% 0.02 248); min-height: 46px; padding: 11px 16px; border: 1px solid oklch(78% 0.02 78); border-radius: 999px; font: 700 0.93rem \"Manrope\", \"Segoe UI\", sans-serif; letter-spacing: 0.01em; transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease; } .ds-btn-ghost:hover { background: oklch(93% 0.022 82); border-color: oklch(66% 0.03 68); transform: translateY(-1px); } .ds-btn-ghost:focus-visible { outline: 2px solid oklch(56% 0.128 38); outline-offset: 2px; }"
+    },
+    {
+      "name": "Status Chip",
+      "kind": "chip",
+      "refersTo": "chip-default",
+      "description": "Compact metadata or status pill with a soft tonal fill.",
+      "html": "<span class=\"ds-chip-status\">Currently under active development</span>",
+      "css": ".ds-chip-status { display: inline-flex; align-items: center; padding: 6px 10px; border: 1px solid oklch(76% 0.02 78); border-radius: 999px; background: oklch(94% 0.028 118); color: oklch(48% 0.07 138); font: 700 0.72rem \"Manrope\", \"Segoe UI\", sans-serif; letter-spacing: 0.05em; }"
+    },
+    {
+      "name": "Working Style Panel",
+      "kind": "card",
+      "refersTo": "panel-default",
+      "description": "Signature contained surface that turns priority lists into authored structure.",
+      "html": "<section class=\"ds-panel\"><p class=\"ds-panel-kicker\">Working style</p><h3 class=\"ds-panel-title\">Execution Priorities</h3><ol class=\"ds-panel-list\"><li><strong>Execution Speed</strong><span>Reduce time to market while keeping architecture maintainable.</span></li><li><strong>End-to-End Execution</strong><span>Execute implementation end-to-end and contribute with consistency across delivery.</span></li></ol></section>",
+      "css": ".ds-panel { position: relative; padding: 30px 28px 28px; border: 1px solid oklch(74% 0.024 78); border-radius: 28px; background: linear-gradient(180deg, oklch(96% 0.014 82 / 0.98), oklch(94% 0.018 82 / 0.96)); box-shadow: 0 12px 30px oklch(24% 0.02 248 / 0.06); color: oklch(29% 0.022 252); } .ds-panel-kicker { margin: 0 0 18px; color: oklch(56% 0.016 245); font: 800 0.74rem \"Sora\", \"Segoe UI\", sans-serif; letter-spacing: 0.12em; text-transform: uppercase; } .ds-panel-title { margin: 0 0 18px; font: 700 1.02rem \"Sora\", \"Segoe UI\", sans-serif; } .ds-panel-list { list-style: none; margin: 0; padding: 0; counter-reset: priorities; display: grid; gap: 14px; } .ds-panel-list li { position: relative; padding: 16px 0 0 52px; border-top: 1px solid oklch(76% 0.02 78); } .ds-panel-list li::before { counter-increment: priorities; content: \"0\" counter(priorities); position: absolute; left: 0; top: 16px; color: oklch(56% 0.128 38); font: 700 0.86rem \"Sora\", \"Segoe UI\", sans-serif; letter-spacing: 0.08em; } .ds-panel-list li:first-child { border-top: 0; padding-top: 0; } .ds-panel-list li:first-child::before { top: 0; } .ds-panel-list strong { display: block; margin-bottom: 6px; font: 700 1rem \"Manrope\", \"Segoe UI\", sans-serif; } .ds-panel-list span { display: block; color: oklch(43% 0.02 248); font: 400 0.95rem \"Manrope\", \"Segoe UI\", sans-serif; line-height: 1.6; }"
+    },
+    {
+      "name": "Language Switch",
+      "kind": "input",
+      "refersTo": "lang-active",
+      "description": "Compact segmented control with clear active emphasis.",
+      "html": "<div class=\"ds-lang-switch\"><button class=\"ds-lang-button\">ES</button><button class=\"ds-lang-button ds-lang-button-active\">EN</button></div>",
+      "css": ".ds-lang-switch { display: inline-flex; align-items: center; gap: 4px; padding: 4px; border: 1px solid oklch(74% 0.022 78); border-radius: 999px; background: oklch(95% 0.016 84 / 0.92); } .ds-lang-button { border: 0; background: transparent; color: oklch(56% 0.016 245); border-radius: 999px; padding: 6px 10px; font: 800 0.75rem \"Manrope\", \"Segoe UI\", sans-serif; letter-spacing: 0.08em; } .ds-lang-button-active { background: oklch(90% 0.04 46); color: oklch(56% 0.128 38); } .ds-lang-button:focus-visible { outline: 2px solid oklch(56% 0.128 38); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Field Notes",
+    "overview": "This system should feel like a product engineer's notebook made public: warm, specific, and grounded in real work. It is not polished into corporate anonymity, and it is not chasing futuristic spectacle. The visual language stays close to paper, margin, marker, and measured emphasis, so the site reads as authored judgment rather than a portfolio template.\n\nThe system communicates technical confidence through hierarchy, restraint, and structure. Large Sora headlines establish conviction, Manrope keeps dense content legible, and terracotta carries the moments of emphasis that matter. Depth comes from tonal layering instead of heavy shadow stacks, which keeps the interface calm while still giving featured blocks enough presence.\n\nThis system explicitly rejects generic dark SaaS aesthetics with blue glow, floating panels, and interchangeable startup visuals. It also rejects portfolio treatments that feel like a polished template, empty minimalism that removes personality and specificity, and decorative futurism that competes with the actual content.",
+    "keyCharacteristics": [
+      "Warm paper-toned surfaces with cool ink and a terracotta accent.",
+      "Strong typographic hierarchy, especially in hero and section openers.",
+      "Tactile and confident controls, not glossy or ornamental.",
+      "Tonal layering and borders used more than dramatic shadows.",
+      "Structured rhythm through numbered sections, ruled lines, and varied spacing."
+    ],
+    "rules": [
+      {
+        "name": "The Marker Rule",
+        "body": "Terracotta Signal is used as a marker, not a fog. It belongs on actions, active states, numbered emphasis, and short accents, not on full-screen glow treatments.",
+        "section": "colors"
+      },
+      {
+        "name": "The Warm Base Rule",
+        "body": "Every neutral is slightly hue-biased toward the warm paper world. Pure white and cold gray break the system.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Big Voice Rule",
+        "body": "Only one element per viewport should behave like display type. When everything shouts, the portfolio sounds templated.",
+        "section": "typography"
+      },
+      {
+        "name": "The Quiet Metadata Rule",
+        "body": "Labels and metadata stay small and controlled. They support structure; they do not become decoration.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tonal Layering Rule",
+        "body": "Depth should be readable even with shadows removed. If a surface only works because of shadow, it is underdesigned.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the warm-paper base and cool-ink text relationship intact.",
+      "Do use Terracotta Signal for actions, active states, and short emphasis runs.",
+      "Do preserve the numbered section grammar and ruled separators when extending the page.",
+      "Do keep paragraph measure controlled, ideally between 65ch and 72ch.",
+      "Do make new components feel tactile and confident, with clear borders, rounded geometry, and restrained motion."
+    ],
+    "donts": [
+      "Don't reintroduce generic dark SaaS aesthetics with blue glow, floating panels, and interchangeable startup visuals.",
+      "Don't make new sections feel like a polished template rather than a personal point of view.",
+      "Don't strip the interface into empty minimalism that removes personality and specificity.",
+      "Don't add decorative futurism that competes with the actual content.",
+      "Don't use gradient text, heavy glassmorphism, oversized side-stripe borders, or repeated identical card grids."
+    ]
+  }
+}
